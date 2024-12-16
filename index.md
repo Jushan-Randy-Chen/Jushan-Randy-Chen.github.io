@@ -8,7 +8,7 @@ I go by Randy (though my legal name is Jushan). I am an upcoming Ph.D. student i
 
 I was born and grew up in China. I came to the U.S. at the age of 16 and finished high school in Columbia, South Carolina. In my leisure time, I play the piano, play video games, go to the gym, etc. I also like singing; I am a huge fan of Jay Chou (one of the most famous pop singers in all the Chinese-speaking regions/countries). I went to his concert when I was 13 years old in 2013. 
 
-Nowadays I've developed my hobby of maximizing the value of my credit card points & miles to redeem free hotel nights and free flights back and forth between the U.S. and Asia. I'm shooting vlogs occasionally for my journeys across China and the U.S.
+Nowadays I've developed my hobby of maximizing the value of my credit card points & miles to redeem free hotel nights and free flights back and forth between the U.S. and Asia (it's in fact an optimization problem with quite a lot of constraints haha). I'm shooting vlogs occasionally for my journeys across China and the U.S.
 
 ## Research Interests
 
