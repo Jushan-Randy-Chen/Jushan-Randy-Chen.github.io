@@ -4,19 +4,20 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+My name is Randy. I am a Ph.D. student in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/). I am supervised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/). Previously, I finished both my B.S. and M.S. in aerospace engineering at [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/), supervised by [Dr. Negar Mehr](https://negarmehr.com/).
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Reinforcement Learning:** safety RL, multi-agent RL
+- **SLAM:** deep visual odometry
+- **Multi-robot Systems:** distributed trajectory optimization, distributed model predictive control, consensus 
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[May. 2024]** I finished my M.S. in aerospace engineering at UIUC. My thesis titled "Improved pose estimation accuracy of monocular deep visual odometry against dynamic entities via adversarial training" is made publicly available!
+- **[Mar. 2024]** I have become a US permanent resident and received my green card!
+- **[Jan. 2023]** Our paper titled "Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for
+Multi-Agent Interactions" is accepted to ICRA 2023!
 
 {% include_relative _includes/publications.md %}
 
