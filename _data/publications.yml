@@ -6,4 +6,4 @@ main:
     conference: International Conference on Robotics and Automation <strong>(ICRA)</strong>, 2023.
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10161176
     code: https://github.com/labicon/dp-ilqr
-    image: ./assets/img/dpilqr-tesser.png
+    image: ./assets/img/dpilqr_tesser.png
