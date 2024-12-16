@@ -6,7 +6,7 @@ layout: homepage
 
 I go by Randy (though my legal name is Jushan). I am an upcoming Ph.D. student in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/). I am supervised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/). Previously, I finished both my B.S. and M.S. in Aerospace Engineering at [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/). I was supervised by [Dr. Negar Mehr](https://negarmehr.com/), who is now an assistant professor at UC Berkeley.
 
-I was born and grew up in China. I came to the U.S. at the age of 16 and finished high school in Columbia, South Carolina. In my leisure time, I play the piano, play video games, go to the gym, etc. I also like singing; I am a huge fan of Jay Chou (one of the most famous pop singers in all the Chinese-speaking regions/cuntries). I went to his concert when I was 13 years old in 2013. Nowadays I've developed my hobby of maximizing the value of my credit card points&miles to redeem free hotel nights and free flights back and forth between the U.S. and Asia.
+I was born and grew up in China. I came to the U.S. at the age of 16 and finished high school in Columbia, South Carolina. In my leisure time, I play the piano, play video games, go to the gym, etc. I also like singing; I am a huge fan of Jay Chou (one of the most famous pop singers in all the Chinese-speaking regions/countries). I went to his concert when I was 13 years old in 2013. Nowadays I've developed my hobby of maximizing the value of my credit card points & miles to redeem free hotel nights and free flights back and forth between the U.S. and Asia.
 
 ## Research Interests
 
