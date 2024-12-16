@@ -8,7 +8,7 @@ My name is Randy. I am a Ph.D. student in Electrical, Computer, and Systems Engi
 
 ## Research Interests
 
-- **Reinforcement Learning:** safety RL, multi-agent RL
+- **Reinforcement Learning:** safe RL, multi-agent RL
 - **SLAM:** deep visual odometry
 - **Multi-robot Systems:** distributed trajectory optimization, distributed model predictive control, consensus 
 
@@ -18,6 +18,7 @@ My name is Randy. I am a Ph.D. student in Electrical, Computer, and Systems Engi
 - **[Mar. 2024]** I have become a US permanent resident and received my green card!
 - **[Jan. 2023]** Our paper titled "Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for
 Multi-Agent Interactions" is accepted to ICRA 2023!
+- **[May 2022]** I graduated with a B.S. in aerospace engineering (w/ honors) from UIUC!
 
 {% include_relative _includes/publications.md %}
 
