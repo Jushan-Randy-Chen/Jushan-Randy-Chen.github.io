@@ -1,7 +1,6 @@
 main:
 
-  - title: Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for
-Multi-Agent Interactions
+  - title: Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for Multi-Agent Interactions
     authors: Zach Williams*, Jushan Chen, and Negar Mehr (*Corresponding authors)
     conference_short: ICRA
     conference: International Conference on Robotics and Automation <strong>(ICRA)</strong>, 2023.
