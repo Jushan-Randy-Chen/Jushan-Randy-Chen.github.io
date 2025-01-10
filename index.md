@@ -14,7 +14,7 @@ One of my hobbies is maximizing the value of my credit card points & miles to re
 
 - **Reinforcement Learning:** safe RL, multi-agent RL
 - **SLAM:** deep visual odometry
-- **Multi-robot Systems:** distributed trajectory optimization, distributed model predictive control, consensus 
+- **Multi-robot Systems:** distributed trajectory optimization, consensus ADMM
 
 ## News
 
