@@ -3,7 +3,7 @@ layout: homepage
 ---
 
 ## About Me
-I am actively looking for summer internships in aerospace & defense!
+I am actively looking for summer internships in aerospace & defense and research interns in robotics!
 
 I go by Randy (though my legal name is Jushan). I am currently pursuing my  Ph.D.  in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/). I am supervised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/). I do research in the intersection of AI and robotics. In particular, I study efficient and scalable multi-robot decision making and planning by leveraging state-the-the-art generative models, reinforcement learning, optimal control, and dynamic games. Previously, I finished both my B.S. and M.S. in Aerospace Engineering at [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/). I was supervised by [Dr. Negar Mehr](https://negarmehr.com/), who is now an assistant professor at UC Berkeley.
 
