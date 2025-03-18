@@ -19,7 +19,7 @@ One of my hobbies is maximizing and redeeming the value of my credit card points
 - **Generative AI in robotics:** diffusion models
 
 ## News
-
+- **[Mar. 2025]** Our paper "[Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage](https://arxiv.org/abs/2503.11829)" is now available in preprint on arxiv!
 - **[May. 2024]** I finished my M.S. in aerospace engineering at UIUC. My thesis, titled "Improved pose estimation accuracy of monocular deep visual odometry against dynamic entities via adversarial training," is made publicly available!
 - **[Mar. 2024]** I have become a US permanent resident and received my green card! I am actively looking for summer internships in aerospace & defense!
 - **[Jan. 2023]** Our paper titled "Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for
