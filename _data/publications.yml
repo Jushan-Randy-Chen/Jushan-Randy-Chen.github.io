@@ -1,4 +1,11 @@
 main:
+  - title: "Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage"
+    authors: Jushan Chen, Santiago Paternain
+    conference_short: In Review
+    conference: 
+    pdf: https://arxiv.org/abs/2503.11829
+    code:
+    image: ./assets/img/image_cover_CDC2025.png
 
   - title: "Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for Multi-Agent Interactions"
     authors: Zach Williams*, Jushan Chen, and Negar Mehr (*Corresponding authors)
