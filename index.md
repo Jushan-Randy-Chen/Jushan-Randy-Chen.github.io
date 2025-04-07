@@ -3,9 +3,9 @@ layout: homepage
 ---
 
 ## About Me
-I am actively looking for summer internships in aerospace & defense and research interns in robotics!
+I am actively looking for summer internships in aerospace & defense and research internships in robotics!
 
-I am currently pursuing my  Ph.D.  in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/). I am supervised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/). I do research in the intersection of AI and robotics. In particular, I study efficient and scalable multi-robot decision making and planning by leveraging state-the-the-art generative models, reinforcement learning, optimal control, and dynamic games. Previously, I finished both my B.S. and M.S. in Aerospace Engineering at [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/). I was supervised by [Dr. Negar Mehr](https://negarmehr.com/), who is now an assistant professor at UC Berkeley.
+I am currently pursuing my  Ph.D.  in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/). I am supervised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/). I do research in the intersection of AI and robotics. I study efficient and scalable multi-robot decision-making and planning by leveraging state-the-art generative models, reinforcement learning, optimal control, and dynamic games. Previously, I finished both my B.S. and M.S. in Aerospace Engineering at [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/). I was supervised by [Dr. Negar Mehr](https://negarmehr.com/), who is now an assistant professor at UC Berkeley.
 
 I came to the U.S. at the age of 16 and finished high school in Columbia, South Carolina. In my leisure time, I play the piano, play video games, go to the gym, etc. I also like singing; I am a huge fan of Jay Chou (周杰伦，a phenomenal mega star who is the equivalent of Bruno Mars of Asia in terms of his influence). I went to his concert in 2013, when I was 13 years old. 
 
@@ -13,10 +13,10 @@ One of my hobbies is maximizing and redeeming the value of my credit card points
 
 ## Research Interests
 
-- **Reinforcement Learning:** safe RL, multi-agent RL
+- **Reinforcement Learning:** multi-agent RL
 - **SLAM:** deep visual odometry
-- **Multi-robot Systems:** consensus ADMM for distributed multi-robot systems
-- **Generative AI in robotics:** diffusion models
+- **Multi-robot Systems:** consensus ADMM, decentralized optimization/control
+- **Generative AI in robotics:** diffusion models for planning
 
 ## News
 - **[Mar. 2025]** Our paper "[Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage](https://arxiv.org/abs/2503.11829)" is now available in preprint on arxiv!
