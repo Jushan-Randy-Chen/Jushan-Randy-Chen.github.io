@@ -12,9 +12,9 @@ One of my hobbies is maximizing and redeeming the value of my credit card points
 
 ## Research Interests
 
-- **Reinforcement Learning:** multi-agent RL
+- **Trajectory Optimization:** trajectory optimization for multi-robot systems
 - **SLAM:** deep visual odometry
-- **Multi-robot Systems:** consensus ADMM, decentralized optimization/control
+- **Multi-robot Systems:** decentralized optimization/control
 - **Generative AI in robotics:** diffusion models for planning
 
 ## News
