@@ -3,7 +3,6 @@ layout: homepage
 ---
 
 ## About Me
-I am actively looking for summer internships in aerospace & defense and research internships in robotics!
 
 I am currently pursuing my  Ph.D.  in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/). I am supervised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/). I do research in the intersection of AI and robotics. I study efficient and scalable multi-robot decision-making and planning by leveraging state-the-art generative models, reinforcement learning, optimal control, and dynamic games. Previously, I finished both my B.S. and M.S. in Aerospace Engineering at [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/). I was supervised by [Dr. Negar Mehr](https://negarmehr.com/), who is now an assistant professor at UC Berkeley.
 
@@ -19,6 +18,7 @@ One of my hobbies is maximizing and redeeming the value of my credit card points
 - **Generative AI in robotics:** diffusion models for planning
 
 ## News
+- **[June. 2025]** I started my new position as a Control Systems Intern at [DEKA Research & Development](https://dekaresearch.com/).
 - **[Mar. 2025]** Our paper "[Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage](https://arxiv.org/abs/2503.11829)" is now available in preprint on arxiv!
 - **[May. 2024]** I finished my M.S. in aerospace engineering at UIUC. My thesis, titled "Improved pose estimation accuracy of monocular deep visual odometry against dynamic entities via adversarial training," is made publicly available!
 - **[Mar. 2024]** I have become a US permanent resident and received my green card! I am actively looking for summer internships in aerospace & defense!
