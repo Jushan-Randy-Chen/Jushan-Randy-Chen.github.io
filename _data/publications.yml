@@ -1,5 +1,5 @@
 main:
-  - title:"PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization"
+  - title: "PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization"
     authors: Jushan Chen, Santiago Paternain
     conference_short: In Review
     conference: 
