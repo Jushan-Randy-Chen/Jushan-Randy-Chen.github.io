@@ -5,4 +5,7 @@
 <ul style="margin:0 0 5px;">
   <li><a href="http://2025.ieee-icra.org/"><autocolor>IEEE/ICRA International Conference on Robotics and Automation (ICRA) 2025</autocolor></a></li>
 </ul>
+<ul style="margin:0 0 5px;">
+  <li><a href="http://2025.ieee-icra.org/"><autocolor>IEEE/Conference on Decision and Control (CDC) 2025</autocolor></a></li>
+</ul>
 
