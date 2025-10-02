@@ -5,7 +5,7 @@ main:
     conference: 
     pdf: 
     code:
-    image: 
+    image: ./assets/img/cover_acc_2026.png
 
   - title: "Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage"
     authors: Jushan Chen, Santiago Paternain
