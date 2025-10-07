@@ -3,8 +3,8 @@ main:
     authors: Jushan Chen, Santiago Paternain
     conference_short: In Review
     conference: 
-    pdf: 
-    code:
+    pdf: https://arxiv.org/abs/2510.04436
+    code: https://github.com/Jushan-Randy-Chen/PAD-TRO
     image: ./assets/img/cover_acc_2026.png
 
   - title: "Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage"
