@@ -8,7 +8,7 @@ I am an upcoming PhD Research Intern at [GE Aerospace Research](https://www.geae
 
 I moved to the U.S. at the age of 16 and finished high school in Columbia, South Carolina. In my leisure time, I play the piano, play video games, go to the gym, etc. I also like singing; I am a huge fan of Jay Chou (周杰伦，a phenomenal mega star who is the equivalent of Bruno Mars of Asia in terms of his influence). I went to his concert in 2013, when I was 13 years old. 
 
-One of my hobbies is maximizing and redeeming the value of my credit card points & miles to get free hotel nights and free flights back and forth between the U.S. and Asia (it's in fact an optimization problem~). I also have a Youtube channel, and I'm shooting vlogs occasionally for my journeys across the U.S. and Asia.
+One of my hobbies is maximizing and redeeming the value of my credit card points & miles to get free hotel nights and free flights back and forth between the U.S. and Asia (it's in fact an optimization problem~). I also have a Youtube channel, and I'm shooting vlogs occasionally for my trips across the U.S. and Asia.
 
 ## Research Interests
 
