@@ -18,7 +18,7 @@ One of my hobbies is maximizing and redeeming the value of my credit card points
 - **Generative AI in robotics:** diffusion models for planning
 
 ## News
-- **[Oct. 2025]** Our paper "[PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization](https://arxiv.org/abs/2510.04436)" is submitted for review
+- **[Jan. 2026]** Our paper "[PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization](https://arxiv.org/abs/2510.04436)" is accepted for publication at the 2026 American Control Conference!
 - **[June. 2025]** I started my new position as a Control Systems Intern at [DEKA Research & Development](https://dekaresearch.com/).
 - **[Mar. 2025]** Our paper "[Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage](https://arxiv.org/abs/2503.11829)" is now available in preprint on arxiv!
 - **[May. 2024]** I finished my M.S. in aerospace engineering at UIUC. My thesis, titled "Improved pose estimation accuracy of monocular deep visual odometry against dynamic entities via adversarial training," is made publicly available!
