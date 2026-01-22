@@ -25,7 +25,7 @@ One of my hobbies is maximizing and redeeming the value of my credit card points
 - **[Mar. 2024]** I have become a US permanent resident and received my green card! I am actively looking for summer internships in aerospace & defense!
 - **[Jan. 2023]** Our paper titled "[Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for
 Multi-Agent Interactions](https://ieeexplore.ieee.org/document/10161176)" is accepted to the IEEE International Conference on Robotics & Automation (ICRA 2023)!
-- **[May 2022]** I graduated with a B.S. in aerospace engineering (w/ honors) from UIUC!
+
 
 {% include_relative _includes/publications.md %}
 
