@@ -1,7 +1,7 @@
 main:
   - title: "PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization"
     authors: Jushan Chen, Santiago Paternain
-    conference_short: In Review
+    conference_short: Accepted for publication at the 2026 American Control Conference
     conference: 
     pdf: https://arxiv.org/abs/2510.04436
     code: https://github.com/Jushan-Randy-Chen/PAD-TRO
