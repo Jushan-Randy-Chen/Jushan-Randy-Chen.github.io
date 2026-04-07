@@ -1,7 +1,15 @@
 main:
+  - title: "Diffusion-Based Optimization for Accelerated Convergence of Redundant Dual-Arm Minimum Time Problems"
+    authors: Jushan Chen, Jonathan Fried, and Santiago Paternain
+    conference_short: In Review
+    conference: 
+    pdf: 
+    code: 
+    image: 
+
   - title: "PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization"
     authors: Jushan Chen, Santiago Paternain
-    conference_short: Accepted for publication at the 2026 American Control Conference
+    conference_short: 2026 American Control Conference (to appear)
     conference: 
     pdf: https://arxiv.org/abs/2510.04436
     code: https://github.com/Jushan-Randy-Chen/PAD-TRO
