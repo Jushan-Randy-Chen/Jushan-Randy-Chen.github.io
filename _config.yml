@@ -11,15 +11,18 @@ affiliations:
   - name: GE Aerospace Research
     role: Embodied AI and Robotics PhD Fellow Intern
     url: https://www.geaerospace.com/company/research
+    logo: ./assets/img/logos/ge-aerospace.png
   - name: Rensselaer Polytechnic Institute
     role: PhD Student, Electrical, Computer & Systems Engineering
     url: https://ecse.rpi.edu/
+    logo: ./assets/img/logos/rpi.png
 
 # Past affiliations, shown under "Previously".
 past_affiliations:
   - name: University of Illinois Urbana-Champaign
     role: B.S. and M.S., Aerospace Engineering
     url: https://aerospace.illinois.edu/
+    logo: ./assets/img/logos/uiuc.png
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
