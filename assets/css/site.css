@@ -54,8 +54,8 @@ a:hover { text-decoration-thickness: 2px; }
 
 .page {
   display: grid;
-  grid-template-columns: 17.5rem minmax(0, 43rem);
-  gap: 4.5rem;
+  grid-template-columns: 19.5rem minmax(0, 43rem);
+  gap: 4rem;
   justify-content: center;
   max-width: 72rem;
   margin: 0 auto;
@@ -82,7 +82,8 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .profile-tagline {
-  display: flex; gap: 0.5rem; align-items: flex-start;
+  display: flex; gap: 0.5rem; align-items: center;
+  white-space: nowrap;
   margin: 0 0 1.5rem;
   color: var(--accent);
   font-size: var(--step-0);
@@ -198,7 +199,7 @@ p { margin: 0 0 1.1rem; }
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem;
 }
 .interests li { border-top: 2px solid var(--ink); padding-top: 1rem; }
-.profile-tagline .icon { color: var(--accent); width: 1.15em; height: 1.15em; margin-top: 0.2em; }
+.profile-tagline .icon { color: var(--accent); width: 1.15em; height: 1.15em; }
 
 .pillar-badge {
   display: inline-grid; place-items: center;
@@ -292,10 +293,10 @@ p { margin: 0 0 1.1rem; }
 
 @media (max-width: 960px) {
   .page { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; max-width: 44rem; padding: 2.5rem 1.25rem 2rem; }
-  .profile { display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; align-items: start; }
-  .profile-photo { width: 7rem; grid-row: span 2; }
-  .profile-name { margin-top: 0.25rem; font-size: 1.5rem; }
-  .profile-tagline { margin-bottom: 0; }
+  .profile { display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; align-items: center; }
+  .profile-photo { width: 7rem; }
+  .profile-name { align-self: center; margin: 0; font-size: 1.5rem; }
+  .profile-tagline { grid-column: 1 / -1; margin: 1rem 0 0; }
   .affiliations, .affiliations-label, .profile-email, .profile-links, .visitors, .toc { grid-column: 1 / -1; }
   .visitors { margin: 1.5rem 0 0; max-width: 22rem; }
   .affiliations:first-of-type { margin-top: 1.5rem; }
