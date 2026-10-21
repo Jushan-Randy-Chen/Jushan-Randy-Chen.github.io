@@ -42,7 +42,7 @@
         {% endif %}
 
         <h1 class="profile-name">{{ site.title }}</h1>
-        {% if site.tagline %}<p class="profile-tagline">{{ site.tagline }}</p>{% endif %}
+        {% if site.tagline %}<p class="profile-tagline">{% include icons/robot.svg %}<span>{{ site.tagline }}</span></p>{% endif %}
 
         {% if site.affiliations %}
         <ul class="affiliations">

@@ -28,10 +28,12 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
   <h2>Research interests</h2>
   <ul class="interests">
     <li>
+      <span class="pillar-badge">{% include icons/robot-walker.svg %}</span>
       <h3>Generative AI for whole-body control and locomotion</h3>
       <p>Using generative models such as diffusion models to produce coordinated whole-body control and locomotion for robots.</p>
     </li>
     <li>
+      <span class="pillar-badge">{% include icons/robot-arm.svg %}</span>
       <h3>Trajectory optimization in safety-critical scenarios</h3>
       <p>Fast, constraint-aware trajectory optimization that keeps single robots and teams of robots safe, drawing on diffusion-based solvers, optimal control, and dynamic games.</p>
     </li>
