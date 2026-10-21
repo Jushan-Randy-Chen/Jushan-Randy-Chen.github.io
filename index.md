@@ -45,7 +45,7 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
 ## News
 
 <ul class="news">
-  <li><time>Summer 2026</time><p>Joined <a href="https://www.geaerospace.com/company/research">GE Aerospace Research</a> as a full-time PhD Research Intern, and stayed on this fall as an Embodied AI and Robotics PhD Fellow Intern with the Robotics and Autonomy team.</p></li>
+  <li><time>Summer 2026</time><p>Started as an Embodied AI and Robotics PhD Fellow Intern at <a href="https://www.geaerospace.com/company/research">GE Aerospace Research</a>, and stayed on this fall with the Robotics and Autonomy team.</p></li>
   <li><time>Jul 2026</time><p>Our paper "<a href="https://arxiv.org/abs/2604.16670">Diffusion-Based Optimization for Accelerated Convergence of Redundant Dual-Arm Minimum Time Problems</a>" was accepted to the 2026 IEEE Conference on Decision and Control (CDC).</p></li>
   <li><time>Jan 2026</time><p>Our paper "<a href="https://arxiv.org/abs/2510.04436">PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization</a>" was accepted to the 2026 American Control Conference.</p></li>
   <li><time>Jun 2025</time><p>Started as a Control Systems Intern at <a href="https://dekaresearch.com/">DEKA Research &amp; Development</a>.</p></li>
