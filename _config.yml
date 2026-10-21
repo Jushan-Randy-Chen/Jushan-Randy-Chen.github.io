@@ -6,6 +6,7 @@ tagline: Embodied AI & robotics researcher
 email: chenj72@rpi.edu
 
 # Affiliations shown under the name, in order.
+# Optional: add `logo: ./assets/img/logos/<file>.png` to show an organization's logo.
 affiliations:
   - name: GE Aerospace Research
     role: Embodied AI and Robotics PhD Fellow Intern

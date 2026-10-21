@@ -47,9 +47,12 @@
         {% if site.affiliations %}
         <ul class="affiliations">
           {% for org in site.affiliations %}
-          <li>
-            <a href="{{ org.url }}">{{ org.name }}</a>
-            <span>{{ org.role }}</span>
+          <li{% if org.logo %} class="has-logo"{% endif %}>
+            {% if org.logo %}<img class="org-logo" src="{{ org.logo }}" alt="" width="40" height="40">{% endif %}
+            <div>
+              <a href="{{ org.url }}">{{ org.name }}</a>
+              <span>{{ org.role }}</span>
+            </div>
           </li>
           {% endfor %}
         </ul>
@@ -59,9 +62,12 @@
         <p class="affiliations-label">Previously</p>
         <ul class="affiliations past">
           {% for org in site.past_affiliations %}
-          <li>
-            <a href="{{ org.url }}">{{ org.name }}</a>
-            <span>{{ org.role }}</span>
+          <li{% if org.logo %} class="has-logo"{% endif %}>
+            {% if org.logo %}<img class="org-logo" src="{{ org.logo }}" alt="" width="40" height="40">{% endif %}
+            <div>
+              <a href="{{ org.url }}">{{ org.name }}</a>
+              <span>{{ org.role }}</span>
+            </div>
           </li>
           {% endfor %}
         </ul>
