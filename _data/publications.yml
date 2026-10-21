@@ -2,7 +2,7 @@ main:
   - title: "Diffusion-Based Optimization for Accelerated Convergence of Redundant Dual-Arm Minimum Time Problems"
     authors: Jushan Chen, Jonathan Fried, and Santiago Paternain
     conference_short: CDC 2026
-    conference: Accepted for publication at the 2026 IEEE Conference on Decision and Control
+    conference: 2026 IEEE Conference on Decision and Control (accepted)
     pdf: https://arxiv.org/abs/2604.16670
     code: 
     image: ./assets/img/robot_dual.png
@@ -10,23 +10,23 @@ main:
   - title: "PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization"
     authors: Jushan Chen, Santiago Paternain
     conference_short: ACC 2026
-    conference: 2026 American Control Conference 
+    conference: 2026 American Control Conference
     pdf: https://arxiv.org/abs/2510.04436
     code: https://github.com/Jushan-Randy-Chen/PAD-TRO
     image: ./assets/img/cover_acc_2026.png
 
   - title: "Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage"
     authors: Jushan Chen, Santiago Paternain
-    conference_short: In Review
-    conference: 
+    conference_short: Preprint
+    conference: Under review
     pdf: https://arxiv.org/abs/2503.11829
     code:
     image: ./assets/img/image_cover_CDC2025.png
 
   - title: "Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for Multi-Agent Interactions"
     authors: Zach Williams*, Jushan Chen, and Negar Mehr (*Corresponding authors)
-    conference_short: ICRA
-    conference: International Conference on Robotics and Automation <strong>(ICRA)</strong>, 2023.
+    conference_short: ICRA 2023
+    conference: IEEE International Conference on Robotics and Automation (ICRA), 2023
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10161176
     code: https://github.com/labicon/dp-ilqr
     image: ./assets/img/dpilqr_tesser.png

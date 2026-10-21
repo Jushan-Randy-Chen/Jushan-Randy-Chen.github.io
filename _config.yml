@@ -2,13 +2,23 @@
 title: Randy (Jushan) Chen
 position: Ph.D. Student
 affiliation: Rensselaer Polytechnic Institute
+tagline: Embodied AI & robotics researcher
 email: chenj72@rpi.edu
+
+# Affiliations shown under the name, in order.
+affiliations:
+  - name: GE Aerospace Research
+    role: PhD Research Intern
+    url: https://www.geaerospace.com/company/research
+  - name: Rensselaer Polytechnic Institute
+    role: PhD Student, Electrical, Computer & Systems Engineering
+    url: https://ecse.rpi.edu/
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://randychen233.github.io
+keywords: Jushan Chen, Randy Chen, embodied AI, robotics, diffusion models, trajectory optimization, multi-robot systems, reinforcement learning, RPI, GE Aerospace Research
+description: Randy (Jushan) Chen is an embodied AI and robotics researcher, a PhD student at Rensselaer Polytechnic Institute and a research intern at GE Aerospace Research.
+canonical: https://jushan-randy-chen.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -28,8 +38,8 @@ favicon_dark: ./assets/img/favicon-rabbit.png
 enable_footnote: false
 
 # Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+# The redesigned layout is light-only; this option is kept for the legacy stylesheets.
+auto_dark_mode: false
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
