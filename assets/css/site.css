@@ -142,6 +142,23 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .toc a:hover { color: var(--accent); border-left-color: var(--accent); }
 
+/* Visitor map (MapMyVisitors widget) */
+.visitors {
+  margin: 0 0 2rem;
+  padding: 0.75rem 0.75rem 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+.visitors figcaption {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+.visitors-map { border-radius: 8px; overflow: hidden; background: var(--accent-soft); min-height: 7rem; }
+.visitors-map img, .visitors-map canvas, .visitors-map iframe { display: block; max-width: 100%; height: auto; }
+
 /* ---------- Content column ---------- */
 
 .content > section { margin-bottom: 3.5rem; }
@@ -256,7 +273,6 @@ p { margin: 0 0 1.1rem; }
   font-size: var(--step--1);
   color: var(--muted);
 }
-.site-footer #mapmyvisitors, .site-footer img, .site-footer canvas { max-width: 220px; }
 
 /* ---------- Responsive ---------- */
 
@@ -266,7 +282,8 @@ p { margin: 0 0 1.1rem; }
   .profile-photo { width: 7rem; grid-row: span 2; }
   .profile-name { margin-top: 0.25rem; font-size: 1.5rem; }
   .profile-tagline { margin-bottom: 0; }
-  .affiliations, .affiliations-label, .profile-email, .profile-links, .toc { grid-column: 1 / -1; }
+  .affiliations, .affiliations-label, .profile-email, .profile-links, .visitors, .toc { grid-column: 1 / -1; }
+  .visitors { margin: 1.5rem 0 0; max-width: 22rem; }
   .affiliations:first-of-type { margin-top: 1.5rem; }
   .profile-links { grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr)); margin-bottom: 0; }
   .toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin-top: 1.5rem; }

@@ -79,6 +79,15 @@
           {% if site.twitter %}<li><a href="{{ site.twitter }}">{% include icons/x-twitter.svg %}X</a></li>{% endif %}
         </ul>
 
+        {% if site.mapmyvisitors_id %}
+        <figure class="visitors">
+          <figcaption>Visitors from around the world</figcaption>
+          <div class="visitors-map">
+            <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ site.mapmyvisitors_id }}&cl=566474&w=a&co=e7edfb&cmo=1f4fd1&cmn=e39a2d"></script>
+          </div>
+        </figure>
+        {% endif %}
+
         <nav class="toc" aria-label="Sections">
           <a href="#about">About</a>
           <a href="#research">Research</a>
@@ -93,7 +102,6 @@
 
         <footer class="site-footer">
           <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=ze6kqVgozSOhVoKoD8h7HZltWLzG_YRKjUaFbVmKiQI&cl=ffffff&w=a"></script>
         </footer>
       </main>
     </div>
