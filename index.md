@@ -10,7 +10,17 @@ I am an embodied AI and robotics researcher. I'm a PhD student in Electrical, Co
 
 My research sits where AI meets robotics. I study efficient, scalable decision-making and planning for single and multi-robot systems, drawing on generative models, reinforcement learning, optimal control, and dynamic games. Before RPI, I earned my B.S. and M.S. in Aerospace Engineering at the [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/), advised by [Dr. Negar Mehr](https://negarmehr.com/), now an assistant professor at UC Berkeley.
 
-I moved to the U.S. at 16 and finished high school in Columbia, South Carolina. Outside the lab I play the piano, play video games, go to the gym, and sing. I'm a huge fan of Jay Chou (周杰伦), the Bruno Mars of Asia in terms of influence, and went to his concert in 2013 when I was 13. I also treat credit card points and miles as an optimization problem, turning them into free flights and hotel nights between the U.S. and Asia, and I occasionally film vlogs of those trips for my YouTube channel.
+<div class="off-clock" markdown="1">
+
+### Off the clock
+
+I moved to the U.S. at 16 and finished high school in Columbia, South Carolina. These days, when I'm not tuning cost functions, you'll find me at the piano, at the gym, or losing track of time in a video game.
+
+I also sing, mostly Jay Chou (周杰伦), the Bruno Mars of Asia. I've been a devoted fan since I saw him live in 2013, at the seasoned age of 13.
+
+And I'm a credit card points guru. Points and miles are just another optimization problem to me, and the optimal solution is free flights and hotel nights between the U.S. and Asia. I vlog some of those trips on my YouTube channel, so you can watch the solution converge in real time.
+
+</div>
 
 </section>
 
