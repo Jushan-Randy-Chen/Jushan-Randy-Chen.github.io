@@ -6,7 +6,7 @@ layout: homepage
 
 ## About me
 
-I am an embodied AI and robotics researcher. I'm a PhD student in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/), advised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/), and a PhD Research Intern at [GE Aerospace Research](https://www.geaerospace.com/company/research) (Summer 2026).
+I am an embodied AI and robotics researcher. I'm a PhD student in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/), advised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/), and a part-time PhD Research Intern with the Robotics and Autonomy team at [GE Aerospace Research](https://www.geaerospace.com/company/research), where I was a full-time PhD Research Intern in Summer 2026.
 
 My research sits where AI meets robotics. I study efficient, scalable decision-making and planning for single and multi-robot systems, drawing on generative models, reinforcement learning, optimal control, and dynamic games. Before RPI, I earned my B.S. and M.S. in Aerospace Engineering at the [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/), advised by [Dr. Negar Mehr](https://negarmehr.com/), now an assistant professor at UC Berkeley.
 
@@ -18,20 +18,12 @@ I moved to the U.S. at 16 and finished high school in Columbia, South Carolina. 
   <h2>Research interests</h2>
   <ul class="interests">
     <li>
-      <h3>Generative AI for robotics</h3>
-      <p>Diffusion models for planning and trajectory optimization.</p>
+      <h3>Generative AI for whole-body control and locomotion</h3>
+      <p>Using generative models such as diffusion models to produce coordinated whole-body control and locomotion for robots.</p>
     </li>
     <li>
-      <h3>Multi-robot systems</h3>
-      <p>Decentralized optimization, control, and game-theoretic interaction.</p>
-    </li>
-    <li>
-      <h3>Trajectory optimization</h3>
-      <p>Fast, constraint-aware motion planning for robots and teams of robots.</p>
-    </li>
-    <li>
-      <h3>Robot perception</h3>
-      <p>Robust deep visual odometry and SLAM.</p>
+      <h3>Trajectory optimization in safety-critical scenarios</h3>
+      <p>Fast, constraint-aware trajectory optimization that keeps single robots and teams of robots safe, drawing on diffusion-based solvers, optimal control, and dynamic games.</p>
     </li>
   </ul>
 </section>

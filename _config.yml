@@ -8,7 +8,7 @@ email: chenj72@rpi.edu
 # Affiliations shown under the name, in order.
 affiliations:
   - name: GE Aerospace Research
-    role: PhD Research Intern
+    role: Part-time PhD Research Intern, Robotics & Autonomy
     url: https://www.geaerospace.com/company/research
   - name: Rensselaer Polytechnic Institute
     role: PhD Student, Electrical, Computer & Systems Engineering
@@ -23,7 +23,7 @@ past_affiliations:
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Jushan Chen, Randy Chen, embodied AI, robotics, diffusion models, trajectory optimization, multi-robot systems, reinforcement learning, RPI, GE Aerospace Research
-description: Randy (Jushan) Chen is an embodied AI and robotics researcher, a PhD student at Rensselaer Polytechnic Institute and a research intern at GE Aerospace Research.
+description: Randy (Jushan) Chen is an embodied AI and robotics researcher, a PhD student at Rensselaer Polytechnic Institute and a part-time research intern with the Robotics and Autonomy team at GE Aerospace Research.
 canonical: https://jushan-randy-chen.github.io/
 
 # Links 
