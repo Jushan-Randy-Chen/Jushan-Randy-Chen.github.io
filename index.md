@@ -8,7 +8,7 @@ layout: homepage
 
 I am an embodied AI and robotics researcher. I'm a PhD student in Electrical, Computer, and Systems Engineering at [Rensselaer Polytechnic Institute](https://ecse.rpi.edu/), advised by [Dr. Santiago Paternain](https://sites.ecse.rpi.edu/~paters/), and a part-time PhD Research Intern with the Robotics and Autonomy team at [GE Aerospace Research](https://www.geaerospace.com/company/research), where I was a full-time PhD Research Intern in Summer 2026.
 
-My research sits where AI meets robotics. I study efficient, scalable decision-making and planning for single and multi-robot systems, drawing on generative models, reinforcement learning, optimal control, and dynamic games. Before RPI, I earned my B.S. and M.S. in Aerospace Engineering at the [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/), advised by [Dr. Negar Mehr](https://negarmehr.com/), now an assistant professor at UC Berkeley.
+My research sits where AI meets robotics. I study efficient, scalable decision-making and planning for single and multi-robot systems, drawing on generative models, reinforcement learning, optimal control, and dynamic games. Before RPI, I earned my B.S. and M.S. in Aerospace Engineering at the [University of Illinois Urbana-Champaign](https://aerospace.illinois.edu/), advised by [Dr. Negar Mehr](https://negarmehr.com/), now a professor at UC Berkeley.
 
 <div class="off-clock" markdown="1">
 
