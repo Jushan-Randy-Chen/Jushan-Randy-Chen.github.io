@@ -2,13 +2,33 @@
 title: Randy (Jushan) Chen
 position: Ph.D. Student
 affiliation: Rensselaer Polytechnic Institute
+tagline: Embodied AI & robotics researcher
 email: chenj72@rpi.edu
+
+# Affiliations shown under the name, in order.
+# Optional: add `logo: ./assets/img/logos/<file>.png` to show an organization's logo.
+affiliations:
+  - name: GE Aerospace Research
+    role: Embodied AI and Robotics PhD Fellow Intern
+    url: https://www.geaerospace.com/company/research
+    logo: ./assets/img/logos/ge-aerospace.png
+  - name: Rensselaer Polytechnic Institute
+    role: PhD Student, Electrical, Computer & Systems Engineering
+    url: https://ecse.rpi.edu/
+    logo: ./assets/img/logos/rpi.png
+
+# Past affiliations, shown under "Previously".
+past_affiliations:
+  - name: University of Illinois Urbana-Champaign
+    role: B.S. and M.S., Aerospace Engineering
+    url: https://aerospace.illinois.edu/
+    logo: ./assets/img/logos/uiuc.png
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://randychen233.github.io
+keywords: Jushan Chen, Randy Chen, embodied AI, robotics, diffusion models, trajectory optimization, multi-robot systems, reinforcement learning, RPI, GE Aerospace Research
+description: Randy (Jushan) Chen is an embodied AI and robotics researcher, a PhD student at Rensselaer Polytechnic Institute and a part-time research intern with the Robotics and Autonomy team at GE Aerospace Research.
+canonical: https://jushan-randy-chen.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -28,8 +48,8 @@ favicon_dark: ./assets/img/favicon-rabbit.png
 enable_footnote: false
 
 # Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+# The redesigned layout is light-only; this option is kept for the legacy stylesheets.
+auto_dark_mode: false
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
@@ -38,6 +58,9 @@ font: "Serif" # or "Sans Serif"
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
 google_analytics:  G-GZE6K1G35G
+
+# MapMyVisitors widget ID (the visitor map in the profile column). Remove to hide it.
+mapmyvisitors_id: ze6kqVgozSOhVoKoD8h7HZltWLzG_YRKjUaFbVmKiQI
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll

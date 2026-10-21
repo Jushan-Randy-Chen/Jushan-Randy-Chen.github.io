@@ -1,51 +1,28 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
+<section id="publications" aria-labelledby="publications-heading">
+<h2 id="publications-heading">Publications</h2>
 
-<div class="publications">
-<ol class="bibliography">
-
-{% for link in site.data.publications.main %}
-
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% if link.conference_short %} 
-    <abbr class="badge">{{ link.conference_short }}</abbr>
+<ol class="pubs">
+{% for pub in site.data.publications.main %}
+  <li class="pub">
+    {% if pub.image %}
+    <a class="pub-media" href="{{ pub.pdf }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ pub.image }}" alt="" loading="lazy">
+    </a>
     {% endif %}
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
+    <div class="pub-body">
+      {% if pub.conference_short %}<p class="pub-venue">{{ pub.conference_short }}</p>{% endif %}
+      <h3 class="pub-title"><a href="{{ pub.pdf }}">{{ pub.title }}</a></h3>
+      <p class="pub-authors">{{ pub.authors | replace: "Jushan Chen", "<strong>Jushan Chen</strong>" }}</p>
+      {% if pub.conference %}<p class="pub-where">{{ pub.conference }}</p>{% endif %}
+      <p class="pub-links">
+        {% if pub.pdf %}<a href="{{ pub.pdf }}">Paper</a>{% endif %}
+        {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+        {% if pub.page %}<a href="{{ pub.page }}">Project page</a>{% endif %}
+        {% if pub.bibtex %}<a href="{{ pub.bibtex }}">BibTeX</a>{% endif %}
+        {% if pub.notes %}<span class="pub-note">{{ pub.notes }}</span>{% endif %}
+      </p>
     </div>
-  </div>
-</div>
-</li>
-<br>
-
+  </li>
 {% endfor %}
-
 </ol>
-</div>
+</section>
