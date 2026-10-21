@@ -1,5 +1,5 @@
 /* Homepage stylesheet: light, cool, quiet.
-   One expressive element (the trajectory figure); everything else stays disciplined. */
+   Icons in _includes/icons are from Font Awesome Free (CC BY 4.0). */
 
 :root {
   --bg: #f4f6f9;          /* cool mist page */
@@ -10,7 +10,7 @@
   --grid: #e3e8ef;
   --accent: #1f4fd1;      /* cobalt: links, path, highlights */
   --accent-soft: #e7edfb;
-  --goal: #e39a2d;        /* amber: goal marker only */
+  --note: #b7791f;        /* amber: publication notes only */
 
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -64,16 +64,10 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- Profile column ---------- */
 
-.profile {
-  position: sticky;
-  top: 3rem;
-  align-self: start;
-  font-family: var(--sans);
-}
+.profile { font-family: var(--sans); }
 
 .profile-photo {
-  width: 11rem; height: 11rem;
-  object-fit: cover;
+  width: 12rem; height: auto;
   border-radius: 14px;
   background: var(--surface);
   border: 1px solid var(--rule);
@@ -104,6 +98,10 @@ a:hover { text-decoration-thickness: 2px; }
 .affiliations a { color: var(--ink); font-weight: 600; text-decoration: none; }
 .affiliations a:hover { color: var(--accent); }
 .affiliations span { display: block; color: var(--muted); font-size: var(--step--1); margin-top: 0.15rem; }
+.affiliations-label { margin: 0 0 0.6rem; color: var(--muted); font-size: var(--step--1); font-weight: 600; }
+.affiliations.past li { border-left-color: var(--rule); }
+
+.icon { width: 1.05em; height: 1.05em; flex: none; fill: currentColor; color: var(--muted); }
 
 .profile-email {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -111,7 +109,6 @@ a:hover { text-decoration-thickness: 2px; }
   margin-bottom: 1rem;
 }
 .profile-email:hover { color: var(--accent); }
-.profile-email i { color: var(--muted); }
 
 .profile-links {
   list-style: none; margin: 0 0 2rem; padding: 0;
@@ -130,17 +127,25 @@ a:hover { text-decoration-thickness: 2px; }
   transition: border-color 0.15s, color 0.15s;
 }
 .profile-links a:hover { border-color: var(--accent); color: var(--accent); }
-.profile-links i { width: 1rem; text-align: center; font-size: 1rem; color: var(--muted); }
-.profile-links a:hover i { color: var(--accent); }
+.profile-links a:hover .icon, .profile-email:hover .icon { color: var(--accent); }
 
-.toc { display: flex; flex-direction: column; gap: 0.15rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
-.toc a { color: var(--muted); text-decoration: none; font-size: var(--step--1); padding: 0.15rem 0; }
-.toc a:hover { color: var(--accent); }
+.toc {
+  position: sticky; top: 2rem;
+  display: flex; flex-direction: column; gap: 0.2rem;
+  border-top: 1px solid var(--rule); padding-top: 1.25rem;
+}
+.toc a {
+  color: var(--ink); text-decoration: none;
+  font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em;
+  padding: 0.3rem 0 0.3rem 0.85rem;
+  border-left: 2px solid transparent;
+}
+.toc a:hover { color: var(--accent); border-left-color: var(--accent); }
 
 /* ---------- Content column ---------- */
 
 .content > section { margin-bottom: 3.5rem; }
-.content > section:not(.hero) { scroll-margin-top: 2rem; }
+.content > section { scroll-margin-top: 2rem; }
 
 h2 {
   font-family: var(--sans);
@@ -156,65 +161,6 @@ h2 {
 h3 { font-family: var(--sans); font-weight: 600; line-height: 1.3; }
 
 p { margin: 0 0 1.1rem; }
-
-/* ---------- Hero ---------- */
-
-.hero-statement {
-  font-family: var(--sans);
-  font-size: var(--step-3);
-  line-height: 1.22;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  max-width: 32ch;
-  margin: 0 0 2rem;
-  text-wrap: balance;
-}
-
-.hero-figure { margin: 0; }
-.hero-figure figcaption {
-  margin-top: 0.75rem;
-  font-family: var(--sans);
-  font-size: var(--step--1);
-  color: var(--muted);
-  max-width: 60ch;
-}
-
-.traj {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 14px;
-}
-.traj .grid line { stroke: var(--grid); stroke-width: 1; }
-.traj .obstacle { fill: #edf0f4; stroke: #b9c3cf; stroke-width: 1.2; stroke-dasharray: 3 4; }
-.traj .path { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; }
-.traj .wp { fill: var(--surface); stroke: var(--accent); stroke-width: 1.6; }
-.traj .start { fill: var(--ink); }
-.traj .goal circle:first-child { fill: none; stroke: var(--goal); stroke-width: 2; }
-.traj .goal circle:last-child { fill: var(--goal); }
-
-/* The one orchestrated moment: waypoints denoise onto the path, then the path draws. */
-@media (prefers-reduced-motion: no-preference) {
-  .traj .wp {
-    transform-box: fill-box;
-    animation: denoise 1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-    animation-delay: calc(var(--i) * 28ms + 200ms);
-  }
-  .traj .path {
-    stroke-dasharray: 1;
-    animation: draw 1.1s ease-out 1.5s both;
-  }
-  @keyframes denoise {
-    from { transform: translate(var(--dx), var(--dy)); opacity: 0.35; stroke: #8a97a6; }
-    to   { transform: translate(0, 0); opacity: 1; }
-  }
-  @keyframes draw {
-    from { stroke-dashoffset: 1; }
-    to   { stroke-dashoffset: 0; }
-  }
-}
 
 /* ---------- Research interests ---------- */
 
@@ -282,7 +228,7 @@ p { margin: 0 0 1.1rem; }
 .pub-where { margin: 0 0 0.5rem; font-size: 0.95rem; font-style: italic; color: var(--muted); }
 
 .pub-links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; font-family: var(--sans); font-size: var(--step--1); font-weight: 500; }
-.pub-note { color: var(--goal); font-weight: 600; }
+.pub-note { color: var(--note); font-weight: 600; }
 
 /* ---------- Service ---------- */
 
@@ -305,18 +251,19 @@ p { margin: 0 0 1.1rem; }
 
 @media (max-width: 960px) {
   .page { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; max-width: 44rem; padding: 2.5rem 1.25rem 2rem; }
-  .profile { position: static; display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; align-items: start; }
-  .profile-photo { width: 7rem; height: 7rem; grid-row: span 2; }
+  .profile { display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; align-items: start; }
+  .profile-photo { width: 7rem; grid-row: span 2; }
   .profile-name { margin-top: 0.25rem; font-size: 1.5rem; }
   .profile-tagline { margin-bottom: 0; }
-  .affiliations, .profile-email, .profile-links { grid-column: 1 / -1; }
-  .affiliations { margin-top: 1.5rem; }
+  .affiliations, .affiliations-label, .profile-email, .profile-links, .toc { grid-column: 1 / -1; }
+  .affiliations:first-of-type { margin-top: 1.5rem; }
   .profile-links { grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr)); margin-bottom: 0; }
-  .toc { display: none; }
+  .toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin-top: 1.5rem; }
+  .toc a { font-size: 1.1rem; padding: 0.2rem 0; border-left: 0; }
 }
 
 @media (max-width: 600px) {
-  :root { --step-3: 1.6rem; --step-2: 1.35rem; }
+  :root { --step-2: 1.35rem; }
   .interests { grid-template-columns: 1fr; }
   .pub { grid-template-columns: 1fr; gap: 0.9rem; }
   .pub-media { max-width: 22rem; }

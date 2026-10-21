@@ -20,8 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{{ "/assets/css/site.css" | relative_url }}">
 
     {% if site.google_analytics %}
@@ -57,16 +55,28 @@
         </ul>
         {% endif %}
 
+        {% if site.past_affiliations %}
+        <p class="affiliations-label">Previously</p>
+        <ul class="affiliations past">
+          {% for org in site.past_affiliations %}
+          <li>
+            <a href="{{ org.url }}">{{ org.name }}</a>
+            <span>{{ org.role }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
         {% if site.email %}
-        <a class="profile-email" href="mailto:{{ site.email }}"><i class="fa-regular fa-envelope" aria-hidden="true"></i>{{ site.email }}</a>
+        <a class="profile-email" href="mailto:{{ site.email }}">{% include icons/email.svg %}{{ site.email }}</a>
         {% endif %}
 
         <ul class="profile-links">
-          {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar</a></li>{% endif %}
-          {% if site.cv_link %}<li><a href="{{ site.cv_link }}"><i class="ai ai-cv" aria-hidden="true"></i>CV</a></li>{% endif %}
-          {% if site.github_link %}<li><a href="{{ site.github_link }}"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>{% endif %}
-          {% if site.linkedin %}<li><a href="{{ site.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>{% endif %}
-          {% if site.twitter %}<li><a href="{{ site.twitter }}"><i class="fab fa-x-twitter" aria-hidden="true"></i>X</a></li>{% endif %}
+          {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}">{% include icons/scholar.svg %}Scholar</a></li>{% endif %}
+          {% if site.cv_link %}<li><a href="{{ site.cv_link }}">{% include icons/cv.svg %}CV</a></li>{% endif %}
+          {% if site.github_link %}<li><a href="{{ site.github_link }}">{% include icons/github.svg %}GitHub</a></li>{% endif %}
+          {% if site.linkedin %}<li><a href="{{ site.linkedin }}">{% include icons/linkedin.svg %}LinkedIn</a></li>{% endif %}
+          {% if site.twitter %}<li><a href="{{ site.twitter }}">{% include icons/x-twitter.svg %}X</a></li>{% endif %}
         </ul>
 
         <nav class="toc" aria-label="Sections">

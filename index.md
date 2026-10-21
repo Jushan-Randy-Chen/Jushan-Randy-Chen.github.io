@@ -2,14 +2,6 @@
 layout: homepage
 ---
 
-<section class="hero" aria-labelledby="hero-statement">
-  <p id="hero-statement" class="hero-statement">I build planning and decision-making methods that let robots, alone and in teams, act safely and efficiently in the physical world.</p>
-  <figure class="hero-figure">
-    {% include trajectory.svg %}
-    <figcaption>Noisy waypoints settle into a smooth, collision-free path, the idea behind my work on diffusion models for trajectory optimization.</figcaption>
-  </figure>
-</section>
-
 <section id="about" markdown="1">
 
 ## About me

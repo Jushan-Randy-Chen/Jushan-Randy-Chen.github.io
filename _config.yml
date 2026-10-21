@@ -14,6 +14,12 @@ affiliations:
     role: PhD Student, Electrical, Computer & Systems Engineering
     url: https://ecse.rpi.edu/
 
+# Past affiliations, shown under "Previously".
+past_affiliations:
+  - name: University of Illinois Urbana-Champaign
+    role: B.S. and M.S., Aerospace Engineering
+    url: https://aerospace.illinois.edu/
+
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Jushan Chen, Randy Chen, embodied AI, robotics, diffusion models, trajectory optimization, multi-robot systems, reinforcement learning, RPI, GE Aerospace Research
