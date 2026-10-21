@@ -14,7 +14,7 @@ My research sits where AI meets robotics. I study efficient, scalable decision-m
 
 ### Off the clock
 
-I moved to the U.S. at 16 and finished high school in Columbia, South Carolina. These days, when I'm not tuning cost functions, you'll find me at the piano, at the gym, or losing track of time in a video game.
+I moved to the U.S. at 16 and finished high school in Columbia, South Carolina. These days, when I'm not tuning cost functions, you'll find me at the piano, at the gym, or deep in a psychology book, somewhere between Freud and Carl Jung. (No, I won't analyze your dreams. Probably.)
 
 I also sing, mostly Jay Chou (周杰伦), the Bruno Mars of Asia. I've been a devoted fan since I saw him live in 2013, at the seasoned age of 13.
 
