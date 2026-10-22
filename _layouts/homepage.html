@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
-    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
+    <title>{{ site.title }} | {{ site.tagline }}</title>
+    <meta name="description" content="{{ site.description }}">
     {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
-    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    {% if site.canonical %}<link rel="canonical" href="{{ site.canonical }}">{% endif %}
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}">
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ site.title }} | {{ site.tagline }}">
+    <meta property="og:description" content="{{ site.description }}">
+    {% if site.canonical %}<meta property="og:url" content="{{ site.canonical }}">{% endif %}
     <meta name="twitter:card" content="summary">
 
     <link rel="icon" href="{{ site.favicon }}" type="image/png">
-    {% include structured-data.html %}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +32,7 @@
     </script>
     {% endif %}
   </head>
-  <body class="side-{{ page.side | default: "research" }}">
+  <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="page">
@@ -43,14 +42,9 @@
         {% endif %}
 
         <h1 class="profile-name">{{ site.title }}</h1>
-        {% if page.side == "consulting" %}
-        <p class="profile-tagline">{% include icons/graph.svg %}<span>{{ site.consulting_tagline }}</span></p>
-        <p class="profile-note">Independent practice, separate from my academic and industry roles. <a href="#disclaimer">Disclaimer</a></p>
-        {% elsif site.tagline %}
-        <p class="profile-tagline">{% include icons/robot.svg %}<span>{{ site.tagline }}</span></p>
-        {% endif %}
+        {% if site.tagline %}<p class="profile-tagline">{% include icons/robot.svg %}<span>{{ site.tagline }}</span></p>{% endif %}
 
-        {% if site.affiliations and page.side != "consulting" %}
+        {% if site.affiliations %}
         <ul class="affiliations">
           {% for org in site.affiliations %}
           <li{% if org.logo %} class="has-logo"{% endif %}>
@@ -64,7 +58,7 @@
         </ul>
         {% endif %}
 
-        {% if site.past_affiliations and page.side != "consulting" %}
+        {% if site.past_affiliations %}
         <p class="affiliations-label">Previously</p>
         <ul class="affiliations past">
           {% for org in site.past_affiliations %}
@@ -79,9 +73,7 @@
         </ul>
         {% endif %}
 
-        {% if page.side == "consulting" %}
-        <a class="btn btn-primary btn-block" href="{{ site.consulting_contact }}">Book an intro call</a>
-        {% elsif site.email %}
+        {% if site.email %}
         <a class="profile-email" href="mailto:{{ site.email }}">{% include icons/email.svg %}{{ site.email }}</a>
         {% endif %}
 
@@ -101,22 +93,12 @@
         </figure>
         {% endif %}
 
-        {% assign home = "/" | relative_url %}
         <nav class="toc" aria-label="Sections">
-          {% if page.side == "consulting" %}
-          <a href="#what">Knowledge graphs</a>
-          <a href="#uses">Where it pays off</a>
-          <a href="#how">How it works</a>
-          <a href="#disclaimer">Disclaimer</a>
-          <a class="toc-switch" href="{{ home }}">Research side</a>
-          {% else %}
-          <a href="{{ home }}#about">About</a>
-          <a href="{{ home }}#research">Research</a>
-          <a href="{{ home }}#news">News</a>
-          <a href="{{ home }}#publications">Publications</a>
-          <a href="{{ home }}#service">Service</a>
-          <a class="toc-switch" href="{{ "/consulting/" | relative_url }}">AI consulting</a>
-          {% endif %}
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#service">Service</a>
         </nav>
       </aside>
 
@@ -124,7 +106,6 @@
         {{ content }}
 
         <footer class="site-footer">
-          <p class="footer-disclaimer">Consulting services are offered independently, in my personal capacity only, and are not affiliated with, endorsed by, or offered on behalf of GE Aerospace, Rensselaer Polytechnic Institute, or any other employer or institution. <a href="{{ "/consulting/" | relative_url }}#disclaimer">Read the full disclaimer</a>.</p>
           <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
         </footer>
       </main>
