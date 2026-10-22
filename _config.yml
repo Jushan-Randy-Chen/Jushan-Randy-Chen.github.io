@@ -67,7 +67,7 @@ newsletter:
   url: https://valdeambulo998499.substack.com
   embed: https://valdeambulo998499.substack.com/embed
   title: Subscribe to my newsletter
-  description: Get my new posts straight to your inbox. It's free, and you can unsubscribe anytime.
+  # description: optional line under the title (the Substack form already shows your publication's description)
   snooze_days: 7
 
 # MapMyVisitors widget ID (the visitor map in the profile column). Remove to hide it.

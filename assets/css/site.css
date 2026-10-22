@@ -338,32 +338,32 @@ html.nl-open, html.nl-open body { overflow: hidden; }
 .nl-backdrop { position: absolute; inset: 0; background: rgba(21, 32, 44, 0.55); backdrop-filter: blur(3px); }
 .nl-card {
   position: relative;
-  width: min(100%, 32rem);
+  width: min(100%, 26rem);
   max-height: calc(100vh - 2rem); overflow: auto;
-  padding: 1.75rem 1.75rem 1.25rem;
+  padding: 1.25rem 1.25rem 0.9rem;
   background: var(--surface);
-  border-radius: 18px;
+  border-radius: 16px;
   border-top: 4px solid var(--accent);
   box-shadow: 0 24px 60px rgba(21, 32, 44, 0.28);
   font-family: var(--sans);
 }
 .nl-close {
-  position: absolute; top: 0.85rem; right: 0.85rem;
-  width: 2.5rem; height: 2.5rem; display: grid; place-items: center;
+  position: absolute; top: 0.7rem; right: 0.7rem;
+  width: 2.25rem; height: 2.25rem; display: grid; place-items: center;
   border: 1px solid var(--rule); border-radius: 50%;
   background: var(--surface); color: var(--ink); cursor: pointer;
 }
 .nl-close svg { width: 1.15rem; height: 1.15rem; }
 .nl-close:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
-.nl-head { display: flex; align-items: center; gap: 0.9rem; margin: 0 3rem 0.9rem 0; }
-.nl-avatar { width: 3.5rem; height: 3.5rem; border-radius: 50%; object-fit: cover; object-position: top; border: 1px solid var(--rule); }
-.nl-kicker { margin: 0; color: var(--muted); font-size: var(--step--1); font-weight: 600; }
-.nl-head h2 { margin: 0.1rem 0 0; padding: 0; border: 0; font-size: var(--step-2); line-height: 1.2; }
+.nl-head { display: flex; align-items: center; gap: 0.7rem; margin: 0 2.75rem 0.85rem 0; }
+.nl-avatar { width: 2.6rem; height: 2.6rem; border-radius: 50%; object-fit: cover; object-position: top; border: 1px solid var(--rule); }
+.nl-kicker { margin: 0; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
+.nl-head h2 { margin: 0.05rem 0 0; padding: 0; border: 0; font-size: var(--step-1); line-height: 1.2; }
 .nl-desc { margin: 0 0 1rem; color: var(--muted); font-family: var(--serif); font-size: 1rem; line-height: 1.55; }
 .nl-frame { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; }
 .nl-frame iframe { display: block; width: 100%; height: 320px; border: 0; background: #fff; }
 .nl-dismiss {
-  display: block; margin: 0.9rem auto 0; padding: 0.4rem 0.6rem;
+  display: block; margin: 0.6rem auto 0; padding: 0.35rem 0.6rem;
   border: 0; background: none; cursor: pointer;
   color: var(--muted); font-family: var(--sans); font-size: var(--step--1); font-weight: 600;
   text-decoration: underline; text-underline-offset: 0.2em;
@@ -396,8 +396,7 @@ html.nl-open, html.nl-open body { overflow: hidden; }
 @media (max-width: 600px) {
   :root { --step-2: 1.35rem; }
   .interests { grid-template-columns: 1fr; }
-  .nl-card { padding: 1.4rem 1.1rem 1rem; }
-  .nl-head h2 { font-size: 1.2rem; }
+  .nl-card { padding: 1.1rem 1rem 0.8rem; }
   .experience li { grid-template-columns: 1fr; gap: 0.2rem; }
   .pub { grid-template-columns: 1fr; gap: 0.9rem; }
   .pub-media { max-width: 22rem; }
