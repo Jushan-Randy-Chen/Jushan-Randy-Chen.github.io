@@ -295,6 +295,112 @@ p { margin: 0 0 1.1rem; }
   color: var(--muted);
 }
 
+/* ---------- Consulting side: its own accent, so the two practices read as separate ---------- */
+
+body.side-consulting { --accent: #0f766e; --accent-soft: #e2f2ef; }
+.side-card-consult { --accent: #0f766e; --accent-soft: #e2f2ef; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--rule); border-radius: 10px;
+  background: var(--surface); color: var(--ink);
+  font-family: var(--sans); font-size: var(--step--1); font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+.btn-block { display: flex; width: 100%; margin-bottom: 1rem; }
+
+.profile-note { margin: -1rem 0 1.5rem; color: var(--muted); font-size: var(--step--1); line-height: 1.45; white-space: normal; }
+.toc a.toc-switch {
+  margin-top: 0.75rem; padding: 0.55rem 0.85rem;
+  border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
+  font-size: var(--step-0); color: var(--muted);
+}
+.toc a.toc-switch:hover { border-color: var(--accent); color: var(--accent); }
+.side-research .toc a.toc-switch { color: #0f766e; }
+
+/* Homepage: the two sides */
+.sides-intro {
+  font-family: var(--sans); font-size: var(--step-2); font-weight: 500;
+  line-height: 1.3; letter-spacing: -0.015em; margin: 0 0 1.5rem; text-wrap: balance;
+}
+.sides-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.side-card {
+  display: flex; flex-direction: column;
+  padding: 1.25rem 1.25rem 1.1rem;
+  background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--accent);
+  border-radius: 12px; color: var(--ink); text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.side-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.side-icon {
+  display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; margin-bottom: 0.75rem;
+  border-radius: 10px; background: var(--accent-soft); color: var(--accent);
+}
+.side-icon .icon { width: 1.3rem; height: 1.3rem; color: var(--accent); }
+.side-card h3 { font-size: var(--step-1); margin: 0 0 0.4rem; }
+.side-card p { margin: 0 0 0.9rem; color: var(--muted); font-size: 1rem; line-height: 1.5; flex: 1; }
+.side-link { font-family: var(--sans); font-size: var(--step--1); font-weight: 600; color: var(--accent); }
+.sides-note { margin: 1rem 0 0; color: var(--muted); font-family: var(--sans); font-size: var(--step--1); }
+
+/* Consulting page */
+.consult-hero h2 { border: 0; padding: 0; font-size: var(--step-3); letter-spacing: -0.02em; margin-bottom: 1rem; }
+.consult-lead { font-size: var(--step-1); line-height: 1.55; max-width: 38rem; }
+.consult-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.5rem 0 0.9rem; }
+.consult-note { font-family: var(--sans); font-size: var(--step--1); color: var(--muted); margin: 0; }
+
+.kg-figure { margin: 1.5rem 0 0; }
+.kg { display: block; width: 100%; height: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; }
+.kg-edges path { stroke: var(--rule); stroke-width: 1.5; fill: none; }
+.kg-edges .kg-ai-edge { stroke: var(--accent); stroke-opacity: 0.35; stroke-dasharray: 3 4; }
+.kg-nodes rect { fill: var(--surface); stroke: #c3ccd7; stroke-width: 1.2; }
+.kg text { font-family: var(--sans); font-size: 13px; font-weight: 600; fill: var(--ink); text-anchor: middle; dominant-baseline: middle; }
+.kg-ai rect { fill: var(--accent); }
+.kg-ai text { fill: #fff; font-size: 15px; }
+.kg-ai .kg-ai-sub { font-size: 11.5px; font-weight: 500; fill: #d6efeb; }
+
+.uses { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem; }
+.uses li { border-top: 2px solid var(--accent); padding-top: 0.75rem; }
+.uses h3 { font-size: var(--step-0); margin: 0 0 0.35rem; }
+.uses p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.5; }
+
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+.steps li { position: relative; padding: 0 0 1.25rem 3.25rem; counter-increment: step; }
+.steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 2.1rem; height: 2.1rem; display: grid; place-items: center;
+  border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+  font-family: var(--sans); font-weight: 700; font-size: var(--step--1);
+}
+.steps li:not(:last-child)::after { content: ""; position: absolute; left: 1.05rem; top: 2.3rem; bottom: 0.2rem; width: 2px; background: var(--accent-soft); }
+.steps h3 { font-size: var(--step-0); margin: 0.2rem 0 0.25rem; }
+.steps p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.5; }
+
+.why { margin: 0 0 1.75rem; padding-left: 1.1rem; }
+.why li { margin-bottom: 0.45rem; }
+.consult-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.25rem 1.5rem; border-radius: 14px; background: var(--accent-soft);
+}
+.consult-cta p { margin: 0; font-family: var(--sans); font-weight: 600; font-size: var(--step-0); }
+
+.disclaimer {
+  padding: 1.5rem 1.75rem 0.75rem;
+  background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--ink);
+  border-radius: 12px;
+}
+.disclaimer h2 { border: 0; padding: 0; margin-bottom: 1rem; font-size: var(--step-1); }
+.disclaimer ol { margin: 0; padding-left: 1.2rem; }
+.disclaimer li { margin-bottom: 0.8rem; font-size: 0.95rem; line-height: 1.6; }
+.disclaimer strong { font-family: var(--sans); font-weight: 600; }
+
+.footer-disclaimer { max-width: 46rem; line-height: 1.5; }
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 960px) {
@@ -314,6 +420,9 @@ p { margin: 0 0 1.1rem; }
 @media (max-width: 600px) {
   :root { --step-2: 1.35rem; }
   .interests { grid-template-columns: 1fr; }
+  .sides-grid, .uses { grid-template-columns: 1fr; }
+  .consult-hero h2 { font-size: 1.6rem; }
+  .disclaimer { padding: 1.25rem 1.25rem 0.5rem; }
   .pub { grid-template-columns: 1fr; gap: 0.9rem; }
   .pub-media { max-width: 22rem; }
   .news li { grid-template-columns: 1fr; gap: 0.15rem; }

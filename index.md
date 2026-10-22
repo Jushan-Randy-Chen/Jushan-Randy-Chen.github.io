@@ -2,6 +2,25 @@
 layout: homepage
 ---
 
+<section class="sides" aria-label="What I do">
+  <p class="sides-intro">I work on two things: research that teaches robots to move and plan safely, and independent consulting that helps manufacturers put AI to work.</p>
+  <div class="sides-grid">
+    <a class="side-card" href="#research">
+      <span class="side-icon">{% include icons/robot.svg %}</span>
+      <h3>Research</h3>
+      <p>Embodied AI and robotics: generative models for whole-body control, and safe trajectory optimization.</p>
+      <span class="side-link">Research and publications</span>
+    </a>
+    <a class="side-card side-card-consult" href="{{ "/consulting/" | relative_url }}">
+      <span class="side-icon">{% include icons/graph.svg %}</span>
+      <h3>AI consulting for manufacturers</h3>
+      <p>AI-enhanced knowledge graphs that turn scattered plant know-how into answers your team can trust.</p>
+      <span class="side-link">See consulting services</span>
+    </a>
+  </div>
+  <p class="sides-note">My consulting is an independent practice, offered in my personal capacity and separate from my academic and industry affiliations. <a href="{{ "/consulting/" | relative_url }}#disclaimer">Read the disclaimer</a>.</p>
+</section>
+
 <section id="about" markdown="1">
 
 ## About me

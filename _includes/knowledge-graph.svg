@@ -1,0 +1,37 @@
+<svg class="kg" viewBox="0 0 640 300" role="img" aria-labelledby="kg-title kg-desc">
+  <title id="kg-title">How an AI-enhanced knowledge graph connects a manufacturer's information</title>
+  <desc id="kg-desc">Machines, parts, suppliers, quality reports, maintenance logs, SOPs and people are linked in one graph. An AI assistant in the middle answers questions using those links and cites its sources.</desc>
+  <g class="kg-edges">
+    <path d="M110 70 L250 70"/>
+    <path d="M250 70 L390 70"/>
+    <path d="M390 70 L530 70"/>
+    <path d="M110 70 L110 230"/>
+    <path d="M530 70 L530 230"/>
+    <path d="M110 230 L250 230"/>
+    <path d="M250 230 L390 230"/>
+    <path d="M390 230 L530 230"/>
+    <path class="kg-ai-edge" d="M320 150 L110 70"/>
+    <path class="kg-ai-edge" d="M320 150 L250 70"/>
+    <path class="kg-ai-edge" d="M320 150 L390 70"/>
+    <path class="kg-ai-edge" d="M320 150 L530 70"/>
+    <path class="kg-ai-edge" d="M320 150 L110 230"/>
+    <path class="kg-ai-edge" d="M320 150 L250 230"/>
+    <path class="kg-ai-edge" d="M320 150 L390 230"/>
+    <path class="kg-ai-edge" d="M320 150 L530 230"/>
+  </g>
+  <g class="kg-nodes">
+    <g transform="translate(110 70)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>Machines</text></g>
+    <g transform="translate(250 70)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>Parts &amp; BOMs</text></g>
+    <g transform="translate(390 70)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>Suppliers</text></g>
+    <g transform="translate(530 70)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>Quality reports</text></g>
+    <g transform="translate(110 230)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>Work orders</text></g>
+    <g transform="translate(250 230)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>SOPs &amp; manuals</text></g>
+    <g transform="translate(390 230)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>People &amp; skills</text></g>
+    <g transform="translate(530 230)"><rect x="-58" y="-20" width="116" height="40" rx="20"/><text>Orders</text></g>
+  </g>
+  <g class="kg-ai" transform="translate(320 150)">
+    <rect x="-92" y="-26" width="184" height="52" rx="14"/>
+    <text y="-4">AI assistant</text>
+    <text class="kg-ai-sub" y="14">answers with sources</text>
+  </g>
+</svg>

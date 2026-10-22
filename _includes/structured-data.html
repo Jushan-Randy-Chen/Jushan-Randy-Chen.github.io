@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{% if page.side == "consulting" %}{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "{{ site.title }}: Independent AI consulting for manufacturers",
+  "url": "{{ page.url | absolute_url }}",
+  "description": {{ page.description | jsonify }},
+  "serviceType": "AI-enhanced knowledge graph consulting for small and medium-sized manufacturers",
+  "provider": {
+    "@type": "Person",
+    "name": "Jushan (Randy) Chen",
+    "url": "{{ "/" | absolute_url }}"
+  }
+}{% else %}{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jushan (Randy) Chen",
+  "alternateName": ["Randy Chen", "Jushan Chen"],
+  "url": "{{ "/" | absolute_url }}",
+  "image": "{{ site.avatar | absolute_url }}",
+  "jobTitle": "PhD student, embodied AI and robotics",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Rensselaer Polytechnic Institute" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign" },
+  "knowsAbout": ["Embodied AI", "Robotics", "Diffusion models", "Trajectory optimization", "Whole-body control", "Knowledge graphs"],
+  "sameAs": [{{ site.google_scholar | jsonify }}, {{ site.github_link | jsonify }}, {{ site.linkedin | jsonify }}]
+}{% endif %}
+</script>
