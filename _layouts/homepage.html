@@ -90,6 +90,10 @@
           {% if site.twitter %}<li><a href="{{ site.twitter }}">{% include icons/x-twitter.svg %}X</a></li>{% endif %}
         </ul>
 
+        {% if site.newsletter.url %}
+        <a class="subscribe" href="{{ site.newsletter.url }}" data-nl-open>{% include icons/newsletter.svg %}<span>Subscribe to my newsletter</span></a>
+        {% endif %}
+
         {% if site.mapmyvisitors_id %}
         <figure class="visitors">
           <figcaption>Visitors from around the world</figcaption>
@@ -117,5 +121,6 @@
         </footer>
       </main>
     </div>
+    {% if site.newsletter.embed %}{% include newsletter-modal.html %}{% endif %}
   </body>
 </html>

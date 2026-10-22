@@ -318,6 +318,64 @@ p { margin: 0 0 1.1rem; }
   font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: #7a4f12;
 }
 
+/* ---------- Newsletter: sidebar button and pop-up ---------- */
+
+.subscribe {
+  display: flex; align-items: center; justify-content: center; gap: 0.55rem;
+  margin: -1.25rem 0 2rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  background: var(--accent); color: #fff;
+  font-family: var(--sans); font-size: var(--step--1); font-weight: 600; text-decoration: none;
+  transition: background-color 0.15s;
+}
+.subscribe .icon { color: #fff; width: 1.1em; height: 1.1em; }
+.subscribe:hover { background: var(--ink); }
+
+html.nl-open, html.nl-open body { overflow: hidden; }
+.nl { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 1rem; }
+.nl[hidden] { display: none; }
+.nl-backdrop { position: absolute; inset: 0; background: rgba(21, 32, 44, 0.55); backdrop-filter: blur(3px); }
+.nl-card {
+  position: relative;
+  width: min(100%, 32rem);
+  max-height: calc(100vh - 2rem); overflow: auto;
+  padding: 1.75rem 1.75rem 1.25rem;
+  background: var(--surface);
+  border-radius: 18px;
+  border-top: 4px solid var(--accent);
+  box-shadow: 0 24px 60px rgba(21, 32, 44, 0.28);
+  font-family: var(--sans);
+}
+.nl-close {
+  position: absolute; top: 0.85rem; right: 0.85rem;
+  width: 2.5rem; height: 2.5rem; display: grid; place-items: center;
+  border: 1px solid var(--rule); border-radius: 50%;
+  background: var(--surface); color: var(--ink); cursor: pointer;
+}
+.nl-close svg { width: 1.15rem; height: 1.15rem; }
+.nl-close:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+.nl-head { display: flex; align-items: center; gap: 0.9rem; margin: 0 3rem 0.9rem 0; }
+.nl-avatar { width: 3.5rem; height: 3.5rem; border-radius: 50%; object-fit: cover; object-position: top; border: 1px solid var(--rule); }
+.nl-kicker { margin: 0; color: var(--muted); font-size: var(--step--1); font-weight: 600; }
+.nl-head h2 { margin: 0.1rem 0 0; padding: 0; border: 0; font-size: var(--step-2); line-height: 1.2; }
+.nl-desc { margin: 0 0 1rem; color: var(--muted); font-family: var(--serif); font-size: 1rem; line-height: 1.55; }
+.nl-frame { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; }
+.nl-frame iframe { display: block; width: 100%; height: 320px; border: 0; background: #fff; }
+.nl-dismiss {
+  display: block; margin: 0.9rem auto 0; padding: 0.4rem 0.6rem;
+  border: 0; background: none; cursor: pointer;
+  color: var(--muted); font-family: var(--sans); font-size: var(--step--1); font-weight: 600;
+  text-decoration: underline; text-underline-offset: 0.2em;
+}
+.nl-dismiss:hover { color: var(--ink); }
+@media (prefers-reduced-motion: no-preference) {
+  .nl:not([hidden]) .nl-backdrop { animation: nl-fade 0.25s ease-out both; }
+  .nl:not([hidden]) .nl-card { animation: nl-rise 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  @keyframes nl-fade { from { opacity: 0; } }
+  @keyframes nl-rise { from { opacity: 0; transform: translateY(12px) scale(0.98); } }
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 960px) {
@@ -326,7 +384,8 @@ p { margin: 0 0 1.1rem; }
   .profile-photo { width: 7rem; }
   .profile-name { align-self: center; margin: 0; font-size: 1.5rem; }
   .profile-tagline { grid-column: 1 / -1; margin: 1rem 0 0; }
-  .affiliations, .affiliations-label, .profile-email, .profile-links, .visitors, .toc { grid-column: 1 / -1; }
+  .affiliations, .affiliations-label, .profile-email, .profile-links, .subscribe, .visitors, .toc { grid-column: 1 / -1; }
+  .subscribe { margin: 0.75rem 0 0; }
   .visitors { margin: 1.5rem 0 0; max-width: 22rem; }
   .affiliations:first-of-type { margin-top: 1.5rem; }
   .profile-links { margin-bottom: 0; }
@@ -337,6 +396,8 @@ p { margin: 0 0 1.1rem; }
 @media (max-width: 600px) {
   :root { --step-2: 1.35rem; }
   .interests { grid-template-columns: 1fr; }
+  .nl-card { padding: 1.4rem 1.1rem 1rem; }
+  .nl-head h2 { font-size: 1.2rem; }
   .experience li { grid-template-columns: 1fr; gap: 0.2rem; }
   .pub { grid-template-columns: 1fr; gap: 0.9rem; }
   .pub-media { max-width: 22rem; }

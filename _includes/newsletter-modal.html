@@ -1,0 +1,77 @@
+{% comment %}
+  Newsletter pop-up. Opens in the centre of the screen when the page loads.
+  After a visitor closes it, it stays hidden for `newsletter.snooze_days` days
+  in that browser. The sidebar "Subscribe" button can always reopen it.
+{% endcomment %}
+<div class="nl" id="newsletter" hidden>
+  <div class="nl-backdrop" data-nl-close></div>
+  <div class="nl-card" role="dialog" aria-modal="true" aria-labelledby="nl-title" aria-describedby="nl-desc">
+    <button type="button" class="nl-close" data-nl-close aria-label="Close newsletter sign-up">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="nl-head">
+      <img class="nl-avatar" src="{{ site.avatar }}" alt="" width="56" height="56">
+      <div>
+        <p class="nl-kicker">{{ site.title }}</p>
+        <h2 id="nl-title">{{ site.newsletter.title }}</h2>
+      </div>
+    </div>
+    {% if site.newsletter.description %}<p id="nl-desc" class="nl-desc">{{ site.newsletter.description }}</p>{% endif %}
+    <div class="nl-frame">
+      <iframe data-src="{{ site.newsletter.embed }}" title="Subscribe to {{ site.title }}'s newsletter on Substack" width="480" height="320" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <button type="button" class="nl-dismiss" data-nl-close>No thanks, take me to the site</button>
+  </div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('newsletter');
+  if (!root) return;
+  var KEY = 'newsletter-dismissed-at';
+  var SNOOZE_MS = {{ site.newsletter.snooze_days | default: 7 }} * 24 * 60 * 60 * 1000;
+  var frame = root.querySelector('iframe');
+  var closeBtn = root.querySelector('.nl-close');
+  var lastFocus = null;
+
+  function snoozed() {
+    try {
+      var t = parseInt(localStorage.getItem(KEY), 10);
+      return t && (Date.now() - t) < SNOOZE_MS;
+    } catch (e) { return false; }
+  }
+
+  function open() {
+    if (frame && !frame.getAttribute('src')) frame.setAttribute('src', frame.getAttribute('data-src'));
+    lastFocus = document.activeElement;
+    root.hidden = false;
+    document.documentElement.classList.add('nl-open');
+    closeBtn.focus();
+  }
+
+  function close() {
+    root.hidden = true;
+    document.documentElement.classList.remove('nl-open');
+    try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  root.addEventListener('click', function (e) {
+    if (e.target.closest('[data-nl-close]')) close();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (root.hidden) return;
+    if (e.key === 'Escape') { close(); return; }
+    if (e.key === 'Tab') {
+      var items = root.querySelectorAll('button, iframe');
+      var first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  document.querySelectorAll('[data-nl-open]').forEach(function (b) {
+    b.addEventListener('click', function (e) { e.preventDefault(); open(); });
+  });
+
+  if (!snoozed()) open();
+})();
+</script>
