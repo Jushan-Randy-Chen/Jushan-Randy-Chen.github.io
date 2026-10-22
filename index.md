@@ -51,7 +51,7 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
       </div>
     </li>
     <li>
-      <p class="exp-when">B.S. and M.S., 2024</p>
+      <p class="exp-when">B.S. 2022, M.S. 2024</p>
       <div>
         <h3>University of Illinois Urbana-Champaign</h3>
         <p class="exp-role">B.S. and M.S., Aerospace Engineering</p>
