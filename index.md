@@ -2,6 +2,20 @@
 layout: homepage
 ---
 
+<section class="intro" aria-labelledby="intro-heading">
+  <h2 id="intro-heading" class="intro-headline">I build AI that helps robots move, plan and work together safely in the real world.</h2>
+  <p class="intro-sub">I turn generative AI into fast, reliable decision-making for machines, from drones and dual-arm robots to whole teams of robots.</p>
+  <ul class="impact">
+    <li><a href="https://arxiv.org/abs/2510.04436"><strong>~4&times;</strong> higher success planning drone flights through dense obstacles</a></li>
+    <li><a href="https://arxiv.org/abs/2604.16670"><strong>35&times;</strong> faster motion planning for dual-arm robots</a></li>
+    <li><a href="https://arxiv.org/abs/2503.11829"><strong>~10&times;</strong> faster training for multi-robot teams</a></li>
+  </ul>
+  <p class="intro-actions">
+    {% if site.linkedin %}<a class="btn btn-primary" href="{{ site.linkedin }}">{% include icons/linkedin.svg %}Connect on LinkedIn</a>{% endif %}
+    {% if site.email %}<a class="btn" href="mailto:{{ site.email }}">{% include icons/email.svg %}Email me</a>{% endif %}
+  </p>
+</section>
+
 <section id="about" markdown="1">
 
 ## About me
@@ -24,8 +38,45 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
 
 </section>
 
+<section id="experience" aria-labelledby="experience-heading">
+  <h2 id="experience-heading">Experience</h2>
+  <ol class="experience">
+    <li>
+      <p class="exp-when">2026 to present</p>
+      <div>
+        <h3>GE Aerospace Research</h3>
+        <p class="exp-role">Embodied AI and Robotics PhD Fellow Intern, Robotics and Autonomy</p>
+        <p>Full-time in Summer 2026, continuing part-time.</p>
+      </div>
+    </li>
+    <li>
+      <p class="exp-when">Summer 2025</p>
+      <div>
+        <h3>DEKA Research &amp; Development</h3>
+        <p class="exp-role">Control Systems Intern</p>
+      </div>
+    </li>
+    <li>
+      <p class="exp-when">PhD, in progress</p>
+      <div>
+        <h3>Rensselaer Polytechnic Institute</h3>
+        <p class="exp-role">PhD, Electrical, Computer, and Systems Engineering</p>
+        <p>Generative AI for robot planning and control. Published at ACC and CDC.</p>
+      </div>
+    </li>
+    <li>
+      <p class="exp-when">B.S. and M.S., 2024</p>
+      <div>
+        <h3>University of Illinois Urbana-Champaign</h3>
+        <p class="exp-role">B.S. and M.S., Aerospace Engineering</p>
+        <p>Multi-robot planning (ICRA 2023) and robust visual navigation (M.S. thesis).</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
 <section id="research">
-  <h2>Research interests</h2>
+  <h2>What I work on</h2>
   <ul class="interests">
     <li>
       <span class="pillar-badge">{% include icons/robot-walker.svg %}</span>
@@ -39,6 +90,8 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
     </li>
   </ul>
 </section>
+
+{% include publications.md %}
 
 <section id="news" markdown="1">
 
@@ -57,6 +110,5 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
 
 </section>
 
-{% include publications.md %}
 
 {% include services.md %}

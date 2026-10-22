@@ -1,0 +1,27 @@
+# Randy (Jushan) Chen
+
+> Embodied AI and robotics researcher. Builds AI that helps robots move, plan and work together safely in the real world, turning generative AI (such as diffusion models) into fast, reliable decision-making for drones, dual-arm robots and multi-robot teams.
+
+## Current roles
+- Embodied AI and Robotics PhD Fellow Intern, Robotics and Autonomy team, GE Aerospace Research (full-time in Summer 2026, continuing part-time)
+- PhD student, Electrical, Computer, and Systems Engineering, Rensselaer Polytechnic Institute (advisor: Dr. Santiago Paternain)
+
+## Background
+- B.S. and M.S. in Aerospace Engineering, University of Illinois Urbana-Champaign (advisor: Dr. Negar Mehr)
+- Control Systems Intern, DEKA Research & Development (Summer 2025)
+
+## Focus areas
+- Generative AI for whole-body control and locomotion
+- Trajectory optimization in safety-critical scenarios
+
+## Selected work
+- [Diffusion-Based Optimization for Accelerated Convergence of Redundant Dual-Arm Minimum Time Problems](https://arxiv.org/abs/2604.16670) (CDC 2026): 35x faster runtime and 34% less Cartesian error than prior work
+- [PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization](https://arxiv.org/abs/2510.04436) (ACC 2026): zero dynamic feasibility error and about 4x higher success rate than a state-of-the-art baseline
+- [Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage](https://arxiv.org/abs/2503.11829) (preprint): about 10x faster training than a game-theoretic baseline
+- [Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for Multi-Agent Interactions](https://ieeexplore.ieee.org/document/10161176) (ICRA 2023)
+
+## Links
+- Website: https://jushan-randy-chen.github.io/
+- Google Scholar: https://scholar.google.com/citations?user=7CBuq3UAAAAJ
+- GitHub: https://github.com/Jushan-Randy-Chen
+- LinkedIn: https://www.linkedin.com/in/jushan-randy-chen/
