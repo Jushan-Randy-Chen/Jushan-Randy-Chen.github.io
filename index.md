@@ -43,7 +43,7 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
       </div>
     </li>
     <li>
-      <p class="exp-when">PhD, in progress</p>
+      <p class="exp-when">Jan 2025 to present</p>
       <div>
         <h3>Rensselaer Polytechnic Institute</h3>
         <p class="exp-role">PhD, Electrical, Computer, and Systems Engineering</p>
