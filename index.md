@@ -2,20 +2,6 @@
 layout: homepage
 ---
 
-<section class="intro" aria-labelledby="intro-heading">
-  <h2 id="intro-heading" class="intro-headline">I build AI that helps robots move, plan and work together safely in the real world.</h2>
-  <p class="intro-sub">I turn generative AI into fast, reliable decision-making for machines, from drones and dual-arm robots to whole teams of robots.</p>
-  <ul class="impact">
-    <li><a href="https://arxiv.org/abs/2510.04436"><strong>~4&times;</strong> higher success planning drone flights through dense obstacles</a></li>
-    <li><a href="https://arxiv.org/abs/2604.16670"><strong>35&times;</strong> faster motion planning for dual-arm robots</a></li>
-    <li><a href="https://arxiv.org/abs/2503.11829"><strong>~10&times;</strong> faster training for multi-robot teams</a></li>
-  </ul>
-  <p class="intro-actions">
-    {% if site.linkedin %}<a class="btn btn-primary" href="{{ site.linkedin }}">{% include icons/linkedin.svg %}Connect on LinkedIn</a>{% endif %}
-    {% if site.email %}<a class="btn" href="mailto:{{ site.email }}">{% include icons/email.svg %}Email me</a>{% endif %}
-  </p>
-</section>
-
 <section id="about" markdown="1">
 
 ## About me
