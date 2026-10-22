@@ -67,7 +67,8 @@ newsletter:
   url: https://valdeambulo998499.substack.com
   embed: https://valdeambulo998499.substack.com/embed
   title: Subscribe to my newsletter
-  # description: optional line under the title (the Substack form already shows your publication's description)
+  # pitch: the one-line value statement shown prominently in the pop-up
+  pitch: Where AI and robots are really headed, explained by someone who builds them.
   snooze_days: 7
 
 # MapMyVisitors widget ID (the visitor map in the profile column). Remove to hide it.

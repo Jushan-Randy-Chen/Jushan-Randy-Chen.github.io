@@ -359,7 +359,16 @@ html.nl-open, html.nl-open body { overflow: hidden; }
 .nl-avatar { width: 2.6rem; height: 2.6rem; border-radius: 50%; object-fit: cover; object-position: top; border: 1px solid var(--rule); }
 .nl-kicker { margin: 0; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
 .nl-head h2 { margin: 0.05rem 0 0; padding: 0; border: 0; font-size: var(--step-1); line-height: 1.2; }
-.nl-desc { margin: 0 0 1rem; color: var(--muted); font-family: var(--serif); font-size: 1rem; line-height: 1.55; }
+.nl-pitch {
+  margin: 0 0 0.9rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-family: var(--sans); font-size: 1.05rem; font-weight: 600; line-height: 1.4; letter-spacing: -0.005em;
+  text-wrap: pretty;
+}
 .nl-frame { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; }
 .nl-frame iframe { display: block; width: 100%; height: 320px; border: 0; background: #fff; }
 .nl-dismiss {

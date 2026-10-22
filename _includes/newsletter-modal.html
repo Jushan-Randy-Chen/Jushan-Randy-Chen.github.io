@@ -16,7 +16,7 @@
         <h2 id="nl-title">{{ site.newsletter.title }}</h2>
       </div>
     </div>
-    {% if site.newsletter.description %}<p id="nl-desc" class="nl-desc">{{ site.newsletter.description }}</p>{% endif %}
+    {% if site.newsletter.pitch %}<p id="nl-desc" class="nl-pitch">{{ site.newsletter.pitch }}</p>{% endif %}
     <div class="nl-frame">
       <iframe data-src="{{ site.newsletter.embed }}" title="Subscribe to {{ site.title }}'s newsletter on Substack" width="480" height="320" frameborder="0" scrolling="no"></iframe>
     </div>
