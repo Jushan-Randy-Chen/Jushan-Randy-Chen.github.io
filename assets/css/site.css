@@ -295,6 +295,29 @@ p { margin: 0 0 1.1rem; }
   color: var(--muted);
 }
 
+/* ---------- Experience ---------- */
+
+.experience { list-style: none; margin: 0; padding: 0; }
+.experience li {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--rule);
+}
+.experience li:first-child { padding-top: 0.25rem; }
+.experience li:last-child { border-bottom: 0; }
+.exp-when { margin: 0; padding-top: 0.2rem; font-family: var(--sans); font-size: var(--step--1); font-weight: 600; color: var(--muted); }
+.experience h3 { margin: 0 0 0.15rem; font-size: var(--step-0); }
+.exp-role { margin: 0 0 0.25rem; font-family: var(--sans); font-size: var(--step--1); font-weight: 500; color: var(--accent); }
+.experience li p:not(.exp-when):not(.exp-role) { margin: 0; font-size: 1rem; line-height: 1.5; color: var(--muted); }
+
+/* ---------- Publications: plain-language line and headline result ---------- */
+
+.pub-plain { margin: 0.1rem 0 0.4rem; font-size: 1rem; line-height: 1.5; }
+.pub-impact {
+  display: inline-block; margin: 0 0 0.6rem; padding: 0.15rem 0.6rem;
+  border-left: 3px solid var(--note); background: #fbf3e6;
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: #7a4f12;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 960px) {
@@ -314,6 +337,7 @@ p { margin: 0 0 1.1rem; }
 @media (max-width: 600px) {
   :root { --step-2: 1.35rem; }
   .interests { grid-template-columns: 1fr; }
+  .experience li { grid-template-columns: 1fr; gap: 0.2rem; }
   .pub { grid-template-columns: 1fr; gap: 0.9rem; }
   .pub-media { max-width: 22rem; }
   .news li { grid-template-columns: 1fr; gap: 0.15rem; }

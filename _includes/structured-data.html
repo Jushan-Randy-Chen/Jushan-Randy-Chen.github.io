@@ -1,0 +1,19 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jushan (Randy) Chen",
+  "alternateName": ["Randy Chen", "Jushan Chen"],
+  "url": "{{ "/" | absolute_url }}",
+  "image": "{{ site.avatar | absolute_url }}",
+  "jobTitle": "Embodied AI and Robotics Researcher",
+  "description": {{ site.description | jsonify }},
+  "affiliation": [
+    { "@type": "Organization", "name": "GE Aerospace Research" },
+    { "@type": "CollegeOrUniversity", "name": "Rensselaer Polytechnic Institute" }
+  ],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign" },
+  "knowsAbout": ["Embodied AI", "Physical AI", "Robotics", "Generative AI", "Diffusion models", "Trajectory optimization", "Multi-robot systems", "Reinforcement learning", "Optimal control", "Game theory"],
+  "sameAs": [{{ site.google_scholar | jsonify }}, {{ site.github_link | jsonify }}, {{ site.linkedin | jsonify }}]
+}
+</script>

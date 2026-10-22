@@ -13,9 +13,15 @@
     <meta property="og:title" content="{{ site.title }} | {{ site.tagline }}">
     <meta property="og:description" content="{{ site.description }}">
     {% if site.canonical %}<meta property="og:url" content="{{ site.canonical }}">{% endif %}
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="{{ site.favicon }}" type="image/png">
+    {% if site.og_image %}<meta property="og:image" content="{{ site.og_image | absolute_url }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ site.title }}, {{ site.tagline }}">
+    <meta name="twitter:image" content="{{ site.og_image | absolute_url }}">{% endif %}
+    {% include structured-data.html %}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,9 +101,10 @@
 
         <nav class="toc" aria-label="Sections">
           <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#news">News</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Focus</a>
           <a href="#publications">Publications</a>
+          <a href="#news">News</a>
           <a href="#service">Service</a>
         </nav>
       </aside>

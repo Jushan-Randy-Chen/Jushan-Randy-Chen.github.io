@@ -6,6 +6,8 @@ main:
     pdf: https://arxiv.org/abs/2604.16670
     code: 
     image: ./assets/img/robot_dual.png
+    plain: "Plans the fastest motions for two robot arms working together along a shared path."
+    impact: "35× faster and 34% less path error than our previous method"
 
   - title: "PAD-TRO: Projection-Augmented Diffusion for Direct Trajectory Optimization"
     authors: Jushan Chen, Santiago Paternain
@@ -14,6 +16,8 @@ main:
     pdf: https://arxiv.org/abs/2510.04436
     code: https://github.com/Jushan-Randy-Chen/PAD-TRO
     image: ./assets/img/cover_acc_2026.png
+    plain: "Uses a diffusion model to plan drone flights that obey physics while weaving through dense obstacles."
+    impact: "~4× higher success rate and zero dynamics violations versus a state-of-the-art baseline"
 
   - title: "Learning Closed-Loop Parametric Nash Equilibria of Multi-Agent Collaborative Field Coverage"
     authors: Jushan Chen, Santiago Paternain
@@ -22,6 +26,8 @@ main:
     pdf: https://arxiv.org/abs/2503.11829
     code:
     image: ./assets/img/image_cover_CDC2025.png
+    plain: "Teaches a team of robots to split up and cover an area together, by turning a multi-robot game into one shared optimization problem."
+    impact: "~10× faster training than a game-theoretic baseline"
 
   - title: "Distributed Potential ILQR: Scalable Game-Theoretic Trajectory Planning for Multi-Agent Interactions"
     authors: Zach Williams*, Jushan Chen, and Negar Mehr (*Corresponding authors)
@@ -30,3 +36,4 @@ main:
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10161176
     code: https://github.com/labicon/dp-ilqr
     image: ./assets/img/dpilqr_tesser.png
+    plain: "Lets many robots plan their motions around each other efficiently by distributing a game-theoretic planner across the team."

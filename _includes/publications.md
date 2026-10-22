@@ -14,6 +14,8 @@
       <h3 class="pub-title"><a href="{{ pub.pdf }}">{{ pub.title }}</a></h3>
       <p class="pub-authors">{{ pub.authors | replace: "Jushan Chen", "<strong>Jushan Chen</strong>" }}</p>
       {% if pub.conference %}<p class="pub-where">{{ pub.conference }}</p>{% endif %}
+      {% if pub.plain %}<p class="pub-plain">{{ pub.plain }}</p>{% endif %}
+      {% if pub.impact %}<p class="pub-impact">{{ pub.impact }}</p>{% endif %}
       <p class="pub-links">
         {% if pub.pdf %}<a href="{{ pub.pdf }}">Paper</a>{% endif %}
         {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}

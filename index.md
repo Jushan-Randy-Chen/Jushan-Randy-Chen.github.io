@@ -24,8 +24,45 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
 
 </section>
 
+<section id="experience" aria-labelledby="experience-heading">
+  <h2 id="experience-heading">Experience</h2>
+  <ol class="experience">
+    <li>
+      <p class="exp-when">2026 to present</p>
+      <div>
+        <h3>GE Aerospace Research</h3>
+        <p class="exp-role">Embodied AI and Robotics PhD Fellow Intern, Robotics and Autonomy</p>
+        <p>Full-time in Summer 2026, continuing part-time.</p>
+      </div>
+    </li>
+    <li>
+      <p class="exp-when">Summer 2025</p>
+      <div>
+        <h3>DEKA Research &amp; Development</h3>
+        <p class="exp-role">Control Systems Intern</p>
+      </div>
+    </li>
+    <li>
+      <p class="exp-when">Jan 2025 to present</p>
+      <div>
+        <h3>Rensselaer Polytechnic Institute</h3>
+        <p class="exp-role">PhD, Electrical, Computer, and Systems Engineering</p>
+        <p>Generative AI for robot planning and control. Published at ACC and CDC.</p>
+      </div>
+    </li>
+    <li>
+      <p class="exp-when">B.S. 2022, M.S. 2024</p>
+      <div>
+        <h3>University of Illinois Urbana-Champaign</h3>
+        <p class="exp-role">B.S. and M.S., Aerospace Engineering</p>
+        <p>Multi-robot planning (ICRA 2023) and robust visual navigation (M.S. thesis).</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
 <section id="research">
-  <h2>Research interests</h2>
+  <h2>What I work on</h2>
   <ul class="interests">
     <li>
       <span class="pillar-badge">{% include icons/robot-walker.svg %}</span>
@@ -39,6 +76,8 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
     </li>
   </ul>
 </section>
+
+{% include publications.md %}
 
 <section id="news" markdown="1">
 
@@ -57,6 +96,5 @@ And I'm a credit card points guru. Points and miles are just another optimizatio
 
 </section>
 
-{% include publications.md %}
 
 {% include services.md %}
