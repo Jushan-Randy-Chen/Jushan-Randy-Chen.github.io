@@ -61,6 +61,15 @@ font: "Serif" # or "Sans Serif"
 # Please remove this if you don't use Google Analytics
 google_analytics:  G-GZE6K1G35G
 
+# Substack newsletter: pop-up on page load plus a "Subscribe" button in the profile column.
+# snooze_days: after a visitor closes the pop-up, it stays hidden in their browser this long.
+newsletter:
+  url: https://valdeambulo998499.substack.com
+  embed: https://valdeambulo998499.substack.com/embed
+  # pitch: the one-line value statement shown as the pop-up's headline
+  pitch: Stay ahead of AI in your career and life. No hype, no jargon, from someone who builds it.
+  snooze_days: 7
+
 # MapMyVisitors widget ID (the visitor map in the profile column). Remove to hide it.
 mapmyvisitors_id: ze6kqVgozSOhVoKoD8h7HZltWLzG_YRKjUaFbVmKiQI
 
