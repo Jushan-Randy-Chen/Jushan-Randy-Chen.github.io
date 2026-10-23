@@ -7,10 +7,11 @@
     {% if pub.image %}
     <a class="pub-media" href="{{ pub.pdf }}" tabindex="-1" aria-hidden="true">
       <img src="{{ pub.image }}" alt="" loading="lazy">
+      {% if pub.conference_short %}<span class="pub-badge">{{ pub.conference_short }}</span>{% endif %}
     </a>
     {% endif %}
     <div class="pub-body">
-      {% if pub.conference_short %}<p class="pub-venue">{{ pub.conference_short }}</p>{% endif %}
+      {% if pub.conference_short and pub.image == nil %}<p class="pub-venue">{{ pub.conference_short }}</p>{% endif %}
       <h3 class="pub-title"><a href="{{ pub.pdf }}">{{ pub.title }}</a></h3>
       <p class="pub-authors">{{ pub.authors | replace: "Jushan Chen", "<strong>Jushan Chen</strong>" }}</p>
       {% if pub.conference %}<p class="pub-where">{{ pub.conference }}</p>{% endif %}

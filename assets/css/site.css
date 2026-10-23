@@ -111,31 +111,20 @@ a:hover { text-decoration-thickness: 2px; }
 
 .icon { width: 1.05em; height: 1.05em; flex: none; fill: currentColor; color: var(--muted); }
 
-.profile-email {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  color: var(--ink); font-size: var(--step--1); text-decoration: none;
-  margin-bottom: 1rem;
-}
-.profile-email:hover { color: var(--accent); }
-
 .profile-links {
-  list-style: none; margin: 0 0 2rem; padding: 0;
-  display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0.4rem;
+  list-style: none; margin: 0 0 0.9rem; padding: 0;
+  display: flex; gap: 0.5rem;
 }
 .profile-links a {
-  display: flex; align-items: center; justify-content: center; gap: 0.45rem;
-  padding: 0.45rem 0.5rem;
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--ink);
-  font-size: var(--step--1);
-  font-weight: 500;
-  text-decoration: none;
-  transition: border-color 0.15s, color 0.15s;
+  display: grid; place-items: center;
+  width: 2.6rem; height: 2.6rem;
+  border: 1px solid var(--rule); border-radius: 50%;
+  background: var(--surface); color: var(--muted);
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
-.profile-links a:hover { border-color: var(--accent); color: var(--accent); }
-.profile-links a:hover .icon, .profile-email:hover .icon { color: var(--accent); }
+.profile-links .icon { width: 1.1rem; height: 1.1rem; }
+.profile-links a:hover { border-color: var(--accent); background: var(--accent-soft); }
+.profile-links a:hover .icon { color: var(--accent); }
 
 .toc {
   position: sticky; top: 2rem;
@@ -150,26 +139,15 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .toc a:hover { color: var(--accent); border-left-color: var(--accent); }
 
-/* Visitor map (MapMyVisitors widget) */
-.visitors {
-  margin: 0 0 2rem;
-  padding: 0.75rem 0.75rem 0.6rem;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-}
-.visitors figcaption {
-  margin: 0 0 0.5rem;
-  color: var(--muted);
-  font-size: var(--step--1);
-  font-weight: 600;
-}
-.visitors-map { border-radius: 8px; overflow: hidden; background: var(--accent-soft); min-height: 7rem; }
+/* Visitor map (MapMyVisitors widget), shown quietly in the footer */
+.visitors { margin: 0 0 1.25rem; max-width: 16rem; }
+.visitors figcaption { margin: 0 0 0.5rem; color: var(--muted); font-size: var(--step--1); font-weight: 600; }
+.visitors-map { border-radius: 10px; overflow: hidden; background: var(--accent-soft); min-height: 6rem; }
 .visitors-map img, .visitors-map canvas, .visitors-map iframe { display: block; max-width: 100%; height: auto; }
 
 /* ---------- Content column ---------- */
 
-.content > section { margin-bottom: 3.5rem; }
+.content > section { margin-bottom: 4.5rem; }
 .content > section { scroll-margin-top: 2rem; }
 
 h2 {
@@ -178,9 +156,7 @@ h2 {
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.25;
-  margin: 0 0 1.25rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--rule);
+  margin: 0 0 1.4rem;
 }
 
 h3 { font-family: var(--sans); font-weight: 600; line-height: 1.3; }
@@ -204,7 +180,7 @@ p { margin: 0 0 1.1rem; }
   list-style: none; margin: 0; padding: 0;
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem;
 }
-.interests li { border-top: 2px solid var(--ink); padding-top: 1rem; }
+.interests li { padding: 1.25rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; }
 .profile-tagline .icon { color: var(--accent); width: 1.3em; height: 1.3em; }
 .icon.icon-robot { fill: none; }
 
@@ -252,9 +228,16 @@ p { margin: 0 0 1.1rem; }
 .pub:first-child { padding-top: 0.25rem; }
 .pub:last-child { border-bottom: 0; }
 
+.pub-media { position: relative; display: block; }
 .pub-media img {
   width: 100%; aspect-ratio: 16 / 10; object-fit: contain; padding: 0.4rem;
-  border-radius: 8px; border: 1px solid var(--rule); background: var(--surface);
+  border-radius: 10px; border: 1px solid var(--rule); background: var(--surface);
+}
+.pub-badge {
+  position: absolute; top: 0.5rem; left: 0.5rem;
+  padding: 0.15rem 0.55rem; border-radius: 999px;
+  background: var(--accent); color: #fff;
+  font-family: var(--sans); font-size: 0.75rem; font-weight: 600;
 }
 
 .pub-venue {
@@ -275,7 +258,7 @@ p { margin: 0 0 1.1rem; }
 
 .pub-authors { margin: 0 0 0.15rem; font-size: 1rem; line-height: 1.5; }
 .pub-authors strong { font-weight: 600; }
-.pub-where { margin: 0 0 0.5rem; font-size: 0.95rem; font-style: italic; color: var(--muted); }
+.pub-where { margin: 0 0 0.45rem; font-size: 0.95rem; font-style: italic; color: var(--muted); }
 
 .pub-links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; font-family: var(--sans); font-size: var(--step--1); font-weight: 500; }
 .pub-note { color: var(--note); font-weight: 600; }
@@ -290,7 +273,7 @@ p { margin: 0 0 1.1rem; }
 
 .site-footer {
   border-top: 1px solid var(--rule);
-  padding-top: 1.25rem;
+  padding-top: 1.5rem;
   font-family: var(--sans);
   font-size: var(--step--1);
   color: var(--muted);
@@ -313,17 +296,13 @@ p { margin: 0 0 1.1rem; }
 /* ---------- Publications: plain-language line and headline result ---------- */
 
 .pub-plain { margin: 0.1rem 0 0.4rem; font-size: 1rem; line-height: 1.5; }
-.pub-impact {
-  display: inline-block; margin: 0 0 0.6rem; padding: 0.15rem 0.6rem;
-  border-left: 3px solid var(--note); background: #fbf3e6;
-  font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: #7a4f12;
-}
+.pub-impact { margin: 0 0 0.55rem; font-family: var(--sans); font-size: 0.9rem; font-weight: 600; color: var(--accent); }
 
 /* ---------- Newsletter: sidebar button and pop-up ---------- */
 
 .subscribe {
   display: flex; align-items: center; justify-content: center; gap: 0.55rem;
-  margin: -1.25rem 0 2rem;
+  margin: 0 0 2rem;
   padding: 0.7rem 1rem;
   border-radius: 10px;
   background: var(--accent); color: #fff;
@@ -388,11 +367,10 @@ html.nl-open, html.nl-open body { overflow: hidden; }
   .profile-photo { width: 7rem; }
   .profile-name { align-self: center; margin: 0; font-size: 1.5rem; }
   .profile-tagline { grid-column: 1 / -1; margin: 1rem 0 0; }
-  .affiliations, .affiliations-label, .profile-email, .profile-links, .subscribe, .visitors, .toc { grid-column: 1 / -1; }
+  .affiliations, .affiliations-label, .profile-links, .subscribe, .toc { grid-column: 1 / -1; }
   .subscribe { margin: 0.75rem 0 0; }
-  .visitors { margin: 1.5rem 0 0; max-width: 22rem; }
   .affiliations:first-of-type { margin-top: 1.5rem; }
-  .profile-links { margin-bottom: 0; }
+  .profile-links { margin-top: 0.25rem; }
   .toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin-top: 1.5rem; }
   .toc a { font-size: 1.1rem; padding: 0.2rem 0; border-left: 0; }
 }

@@ -79,28 +79,16 @@
         </ul>
         {% endif %}
 
-        {% if site.email %}
-        <a class="profile-email" href="mailto:{{ site.email }}">{% include icons/email.svg %}{{ site.email }}</a>
-        {% endif %}
-
-        <ul class="profile-links">
-          {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}">{% include icons/scholar.svg %}Scholar</a></li>{% endif %}
-          {% if site.github_link %}<li><a href="{{ site.github_link }}">{% include icons/github.svg %}GitHub</a></li>{% endif %}
-          {% if site.linkedin %}<li><a href="{{ site.linkedin }}">{% include icons/linkedin.svg %}LinkedIn</a></li>{% endif %}
-          {% if site.twitter %}<li><a href="{{ site.twitter }}">{% include icons/x-twitter.svg %}X</a></li>{% endif %}
+        <ul class="profile-links" aria-label="Contact and profiles">
+          {% if site.email %}<li><a href="mailto:{{ site.email }}" title="Email: {{ site.email }}" aria-label="Email {{ site.email }}">{% include icons/email.svg %}</a></li>{% endif %}
+          {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}" title="Google Scholar" aria-label="Google Scholar">{% include icons/scholar.svg %}</a></li>{% endif %}
+          {% if site.github_link %}<li><a href="{{ site.github_link }}" title="GitHub" aria-label="GitHub">{% include icons/github.svg %}</a></li>{% endif %}
+          {% if site.linkedin %}<li><a href="{{ site.linkedin }}" title="LinkedIn" aria-label="LinkedIn">{% include icons/linkedin.svg %}</a></li>{% endif %}
+          {% if site.twitter %}<li><a href="{{ site.twitter }}" title="X" aria-label="X">{% include icons/x-twitter.svg %}</a></li>{% endif %}
         </ul>
 
         {% if site.newsletter.url %}
         <a class="subscribe" href="{{ site.newsletter.url }}" data-nl-open>{% include icons/newsletter.svg %}<span>Subscribe to my newsletter</span></a>
-        {% endif %}
-
-        {% if site.mapmyvisitors_id %}
-        <figure class="visitors">
-          <figcaption>Visitors from around the world</figcaption>
-          <div class="visitors-map">
-            <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ site.mapmyvisitors_id }}&cl=566474&w=a&co=e7edfb&cmo=1f4fd1&cmn=e39a2d"></script>
-          </div>
-        </figure>
         {% endif %}
 
         <nav class="toc" aria-label="Sections">
@@ -117,6 +105,14 @@
         {{ content }}
 
         <footer class="site-footer">
+          {% if site.mapmyvisitors_id %}
+          <figure class="visitors">
+            <figcaption>Visitors from around the world</figcaption>
+            <div class="visitors-map">
+              <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ site.mapmyvisitors_id }}&cl=566474&w=a&co=e7edfb&cmo=1f4fd1&cmn=e39a2d"></script>
+            </div>
+          </figure>
+          {% endif %}
           <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
         </footer>
       </main>
