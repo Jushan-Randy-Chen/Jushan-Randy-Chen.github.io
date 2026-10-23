@@ -205,7 +205,8 @@ p { margin: 0 0 1.1rem; }
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem;
 }
 .interests li { border-top: 2px solid var(--ink); padding-top: 1rem; }
-.profile-tagline .icon { color: var(--accent); width: 1.15em; height: 1.15em; }
+.profile-tagline .icon { color: var(--accent); width: 1.3em; height: 1.3em; }
+.icon.icon-robot { fill: none; }
 
 .pillar-badge {
   display: inline-grid; place-items: center;
