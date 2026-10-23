@@ -66,8 +66,7 @@ google_analytics:  G-GZE6K1G35G
 newsletter:
   url: https://valdeambulo998499.substack.com
   embed: https://valdeambulo998499.substack.com/embed
-  title: Subscribe to my newsletter
-  # pitch: the one-line value statement shown prominently in the pop-up
+  # pitch: the one-line value statement shown as the pop-up's headline
   pitch: Where AI and robots are really headed, explained by someone who builds them.
   snooze_days: 7
 

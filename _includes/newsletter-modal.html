@@ -5,18 +5,17 @@
 {% endcomment %}
 <div class="nl" id="newsletter" hidden>
   <div class="nl-backdrop" data-nl-close></div>
-  <div class="nl-card" role="dialog" aria-modal="true" aria-labelledby="nl-title" aria-describedby="nl-desc">
+  <div class="nl-card" role="dialog" aria-modal="true" aria-labelledby="nl-title">
     <button type="button" class="nl-close" data-nl-close aria-label="Close newsletter sign-up">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <div class="nl-head">
-      <img class="nl-avatar" src="{{ site.avatar }}" alt="" width="56" height="56">
+      <img class="nl-avatar" src="{{ site.avatar }}" alt="" width="40" height="40">
       <div>
-        <p class="nl-kicker">{{ site.title }}</p>
-        <h2 id="nl-title">{{ site.newsletter.title }}</h2>
+        <p class="nl-kicker">Newsletter by {{ site.title }}</p>
+        <h2 id="nl-title" class="nl-pitch">{{ site.newsletter.pitch }}</h2>
       </div>
     </div>
-    {% if site.newsletter.pitch %}<p id="nl-desc" class="nl-pitch">{{ site.newsletter.pitch }}</p>{% endif %}
     <div class="nl-frame">
       <iframe data-src="{{ site.newsletter.embed }}" title="Subscribe to {{ site.title }}'s newsletter on Substack" width="480" height="320" frameborder="0" scrolling="no"></iframe>
     </div>
