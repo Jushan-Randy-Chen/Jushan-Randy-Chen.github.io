@@ -14,6 +14,8 @@
     <meta property="og:description" content="{{ site.description }}">
     {% if site.canonical %}<meta property="og:url" content="{{ site.canonical }}">{% endif %}
     <meta name="twitter:card" content="summary_large_image">
+    {% if site.twitter_handle %}<meta name="twitter:site" content="@{{ site.twitter_handle }}">
+    <meta name="twitter:creator" content="@{{ site.twitter_handle }}">{% endif %}
 
     <link rel="icon" href="{{ site.favicon }}" type="image/png">
     {% if site.og_image %}<meta property="og:image" content="{{ site.og_image | absolute_url }}">
@@ -84,7 +86,7 @@
           {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}" title="Google Scholar" aria-label="Google Scholar">{% include icons/scholar.svg %}</a></li>{% endif %}
           {% if site.github_link %}<li><a href="{{ site.github_link }}" title="GitHub" aria-label="GitHub">{% include icons/github.svg %}</a></li>{% endif %}
           {% if site.linkedin %}<li><a href="{{ site.linkedin }}" title="LinkedIn" aria-label="LinkedIn">{% include icons/linkedin.svg %}</a></li>{% endif %}
-          {% if site.twitter %}<li><a href="{{ site.twitter }}" title="X" aria-label="X">{% include icons/x-twitter.svg %}</a></li>{% endif %}
+          {% if site.twitter %}<li><a href="{{ site.twitter }}" title="X (Twitter): @{{ site.twitter_handle }}" aria-label="X (Twitter) @{{ site.twitter_handle }}">{% include icons/x-twitter.svg %}</a></li>{% endif %}
         </ul>
 
         {% if site.newsletter.url %}
