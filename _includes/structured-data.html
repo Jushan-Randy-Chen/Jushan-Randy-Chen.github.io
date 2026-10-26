@@ -14,6 +14,6 @@
   ],
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign" },
   "knowsAbout": ["Embodied AI", "Physical AI", "Robotics", "Generative AI", "Diffusion models", "Trajectory optimization", "Multi-robot systems", "Reinforcement learning", "Optimal control", "Game theory"],
-  "sameAs": [{{ site.google_scholar | jsonify }}, {{ site.github_link | jsonify }}, {{ site.linkedin | jsonify }}]
+  "sameAs": [{{ site.google_scholar | jsonify }}, {{ site.github_link | jsonify }}, {{ site.linkedin | jsonify }}{% if site.twitter %}, {{ site.twitter | jsonify }}{% endif %}]
 }
 </script>
